@@ -1,0 +1,30 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+{% include '_breadcrumb.twig' with { level: blog.title , sublevel: post.title } %}
+<div class="container margin-bottom margin-top">
+  <div class="row post">
+  <div class="col-sm-9">
+    {% if post.image_url is not null %}
+    <div class="post__image" style="background-image:url('{{ post.image_url }}');"></div>
+    {% endif %}
+    <h1 class="post__title title--italic">{{ post.title }}</h1>
+    <p><em>{{ post.published_at | datetime }}</em></p>
+    <p class="post__content">{{ post.content }}</p>
+
+    {% if settings.enable_share_blog and
+      ( settings.facebook_link is not empty
+        or settings.twitter_link is not empty
+        or settings.pinterest_link is not empty
+        or settings.google_link is not empty) %}
+      <hr class="divider">
+      {% include '_social-share.twig' %}
+    {% endif %}
+  </div>
+
+  <div class="col-sm-3 related-posts">
+    {% include '_blog-sidebar.twig' %}
+  </div>
+</div>
+</div>
+{% endblock %}

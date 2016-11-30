@@ -1,0 +1,16 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+<div class="container margin-top">
+  <div class="row">
+    <div class="col-sm-12 section__title section-title--margin">
+      <h1 class="section-heading section--italic">Iniciar Sesión</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      {% include '_login-form.twig' %}
+    </div>
+  </div>
+</div>
+{% endblock %}

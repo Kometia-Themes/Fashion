@@ -1,0 +1,54 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+<div class="container margin-top">
+  <div class="row">
+    <div class="col-xs-12 section__title">
+      <h1 class="section-heading section--italic">{{ category.title | capitalize }}</h1>
+    </div>
+  </div>
+    <div class="row">
+    {% set has_categories = categories | length > 0 %}
+    {% if has_categories %}
+    <div class="col-md-3 categories-filter">
+      <div class="sidebar">
+        <h4>Categorías</h4>
+        <hr>
+        <div class="categories__container">
+        {% for category_element in categories %}
+          <ul class="category">
+          {% include '_category_tree_item.twig' with { 'category': category_element, 'current': category } only %}
+          </ul>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="{% if has_categories %}col-md-9{% else %}col-md-12{% endif %}">
+    {% if products.count == 0 %}
+      {% include '_products-empty.twig' %}
+    {% else %}
+      {% set batches = has_categories ? 3 : 4 %}
+      {% set cols = has_categories ? 4 : 3 %}
+      <div class="row">
+        <div class="col-xs-12 featured-products">
+          {% for products_row in products | batch(batches) %}
+          <div class="row">
+            {% for product in products_row %}
+              <div class="col-xs-12 col-sm-6 col-md-{{ cols }}">
+                {% include "_product-card.twig" %}
+              </div>
+            {% endfor %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+    {% include '_pagination.twig' %}
+
+    {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

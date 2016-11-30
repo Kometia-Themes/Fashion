@@ -1,0 +1,23 @@
+<div class="main-banner margin-bottom" style="background-image: url('{{ settings.main_banner_image }}')">
+    <div class="container">
+        <div class="row">
+            {% if settings.main_banner_overlay %}
+                <div class="main-banner__overlay"></div>
+            {% endif %}
+            <div class="col-xs-12">
+                <div class="main-banner__info">
+                  <div class="main-banner__top-line"></div>
+                  <div class="main-banner__left-line"></div>
+                  <div class="main-banner__bottom-line"></div>
+                    <h2 class="main_banner_title">{{ settings.main_banner_title }}</h2>
+                    <p class="main_banner_description">{{ settings.main_banner_description }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-3">
+                <a href="{{ settings.main_banner_btn_url }}" class="btn-outline btn btn-block btn-banner">{{ settings.main_banner_btn_text }}</a>
+            </div>
+        </div>
+    </div>
+</div>
