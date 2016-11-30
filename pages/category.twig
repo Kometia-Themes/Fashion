@@ -27,7 +27,11 @@
 
     <div class="{% if has_categories %}col-md-9{% else %}col-md-12{% endif %}">
     {% if products.count == 0 %}
-      {% include '_products-empty.twig' %}
+      <div class="row">
+        <div class="col-sm-12">
+          <p>Lo sentimos, no hay productos que conicidan con su búsqueda.</p>
+        </div>
+      </div>
     {% else %}
       {% set batches = has_categories ? 3 : 4 %}
       {% set cols = has_categories ? 4 : 3 %}
