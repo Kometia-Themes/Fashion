@@ -1,1 +1,1 @@
-# Shoperti Starter Theme
+# Shoperti Fashion Theme
