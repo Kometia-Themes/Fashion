@@ -61,7 +61,6 @@
       selector: 'js-variant-select',
       skus: {{ product.skus | json }}
     }, function(sku) {
-      console.log(sku);
       if (sku && !(sku.stock_policy !== 'none' && sku.in_stock < 1)) {
         jQuery('#js-sku-id').val(sku.id);
         jQuery('#js-add-to-cart').removeClass('disabled').removeAttr('disabled', 'disabled')
