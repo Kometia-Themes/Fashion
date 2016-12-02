@@ -3,15 +3,14 @@
 
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-3 col-md-push-9 newsletter-foo">
-      <h3 class="newsletter-foo--title newsletter-foo__size newsletter-foo--title-color">¡Únete a nuestra newsletter!</h3>
-      <p class="newsletter-foo--body-color">Entérate antes que nadie de las mejores promociones, nuevos estilos, tendencias del momento y mucho más…</p>
-
-        <form>
+      <h3 class="newsletter-foo--title newsletter-foo__size newsletter-foo--title-color">{{ settings.footer_mailing_list_title }}</h3>
+      <p class="newsletter-foo--body-color">{{ settings.footer_mailing_list_text }}</p>
+      {% form 'newsletter' %}
           <div class="input-group newsletter-foo--input-group">
-            <input type="email" class="form-control newsletter-foo--input" id="email"  placeholder="Email">
+            <input type="email" name="newsletter" class="form-control newsletter-foo--input" id="newsletter"  placeholder="Escribe tu email aquì" required>
             <button type="submit" class="btn btn-default newsletter-foo__button"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
           </div>
-        </form>
+      {% endform %}
       </div>
       <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-9 col-md-pull-3">
         <div class="row main-menu-foo">

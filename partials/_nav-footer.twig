@@ -15,7 +15,7 @@
           {% if menu_item.children | length > 0 %}
             <ul>
             {% for child in menu_item.children %}
-              {% include "_nav-children.twig" with { 'menu_item' : child } %}
+              {% include "_nav-footer-children.twig" with { 'menu_item' : child } %}
             {% endfor %}
            </ul>
          {% endif %}
@@ -45,7 +45,7 @@
           {% if menu_item.children | length > 0 %}
             <ul>
             {% for child in menu_item.children %}
-              {% include "_nav-children.twig" with { 'menu_item' : child } %}
+              {% include "_nav-footer-children.twig" with { 'menu_item' : child } %}
             {% endfor %}
            </ul>
          {% endif %}

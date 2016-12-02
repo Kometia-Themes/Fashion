@@ -68,6 +68,15 @@
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
   <script src="{{ 'app.js' | asset_url }}"></script>
+  <script type="text/javascript">
+  $('a.multi').on("click", function(e){
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  $( "p:contains('<meta charset=\"utf-8\" \/>')").remove();
+
+  </script>
   {% endblock %}
 </body>
 </html>

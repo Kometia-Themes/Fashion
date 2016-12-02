@@ -1,26 +1,30 @@
 {% if errors is not empty %}
-<div class="alert alert-danger fade in">
-  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-  {% for message in errors %}
-  <div>{{ message }}</div>
-  {% endfor %}
+<div class="alert alert-danger fade in notifications type-errors">
+  <div class="container">
+    <div class="col-xs-12 text-center">
+    <button type="button" class="close notifications__close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    {% for message in errors %}
+    <div class="notifications__message">{{ message }}</div>
+    {% endfor %}
+    </div>
+  </div>
 </div>
 {% endif %}
 
 {% if success is not empty %}
-<div class="alert alert-success fade in">
-  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+<div class="alert alert-success fade in notifications type-success">
+  <button type="button" class="close notifications__close" data-dismiss="alert" aria-hidden="true">&times;</button>
   {% for message in success %}
-  <div>{{ message }}</div>
+  <div class="notifications__message">{{ message }}</div>
   {% endfor %}
 </div>
 {% endif %}
 
 {% if warning is not empty %}
-<div class="alert alert-warning fade in">
-  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+<div class="alert alert-warning fade in notifications type-warning">
+  <button type="button" class="close notifications__close" data-dismiss="alert" aria-hidden="true">&times;</button>
   {% for message in warning %}
-  <div>{{ message }}</div>
+  <div class="notifications__message">{{ message }}</div>
   {% endfor %}
 </div>
 {% endif %}

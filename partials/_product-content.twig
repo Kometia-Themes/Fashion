@@ -13,8 +13,8 @@
         {% if product.images | length > 1 %}
         <div class="slider-product js-slider">
           {% for thumbnail in product.images %}
-          <div>
-            <img src="{{ thumbnail.url }}" alt="{{ product.name }}">
+          <div class="slider-product__item">
+            <img class="slider-product--image" src="{{ thumbnail.url }}" alt="{{ product.name }}">
           </div>
           {% endfor %}
         </div>
@@ -27,54 +27,65 @@
           <del>{{ product.compared_price is defined ? product.compared_price | money('symbol', 'code') : '' }}</del>
           {{ product.price | money('symbol', 'code') }}
         </div>
-        <div class="product-price-data">
-        <form class="product_selection" action="/carrito/agregar" method="post">
-        <input type="hidden" name="sku_id" value="{{ product.sku.id }}" id="js-sku-id">
         <div class="row">
-          {% for modifier, options in product.skus_modifiers %}
-          <div class="col-xs-12 col-md-6">
-            <div class="product__vars">
-              <h5 class="product__heading">{{ modifier }}</h5>
-              <select class="selectpicker js-variant-select" title="Elegir {{ modifier }}" name="{{ loop.index0 }}" id="{{ loop.index0 }}">
-                <option></option>
-                {% for option in options %}
-                <option value="{{ option }}">{{ option }}</option>
-                {% endfor %}
-              </select>
-            </div>
-          </div>
-          {% endfor %}
-          <div class="col-xs-12 col-md-6">
-            <div class="product__vars">
-              <h5 class="product__heading">Cantidad</h5>
-              <select class="selectpicker" title="Cantidad de producto" name="quantity" id="quantity">
-                {% for qty in 1..5 %}
-                <option value="{{ qty }}" {{ qty == item.quantity ? ' selected="selected"' : null }}>{{ qty }}</option>
-                {% endfor %}
-              </select>
-            </div>
-          </div>
-        </div>
-
-        <div class="row margin-top product__btn">
           <div class="col-xs-12">
-            {% if product.is_in_stock %}
-            <button type="submit" class="btn btn-block js-add-to-cart">
-              <i class="fa fa-cart-plus"></i>
-              Añadir al carrito
-            </button>
-            <button type="submit" class="btn btn-block js-add-to-cart-disabled" disabled="disabled">
-              No disponible
-            </button>
-            {% else %}
-            <button class="btn btn-block js-add-to-cart-disabled" disabled="disabled">
-              No disponible
-            </button>
-            {% endif %}
+            <p class="product__description">
+              {{ product.description }}
+            </p>
           </div>
         </div>
-      </form>
-          {% if settings.enable_share_products %}
+        <div class="product-price-data">
+          <form class="product_selection" action="/carrito/agregar" method="post">
+          <input type="hidden" name="sku_id" value="{{ product.sku.id }}" id="js-sku-id">
+          <div class="row">
+            {% for modifier, options in product.skus_modifiers %}
+            <div class="col-xs-12 col-md-6">
+              <div class="product__vars">
+                <h5 class="product__heading">{{ modifier }}</h5>
+                <select class="selectpicker js-variant-select" title="Elegir {{ modifier }}" name="{{ loop.index0 }}" id="{{ loop.index0 }}">
+                  <option></option>
+                  {% for option in options %}
+                  <option value="{{ option }}">{{ option }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+            {% endfor %}
+            <div class="col-xs-12 col-md-6">
+              <div class="product__vars">
+                <h5 class="product__heading">Cantidad</h5>
+                <select class="selectpicker" title="Cantidad de producto" name="quantity" id="quantity">
+                  {% for qty in 1..5 %}
+                  <option value="{{ qty }}" {{ qty == item.quantity ? ' selected="selected"' : null }}>{{ qty }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row margin-top product__btn">
+            <div class="col-xs-12 col-md-6">
+              {% if product.is_in_stock %}
+              <button type="submit" class="btn btn-block js-add-to-cart">
+                <i class="fa fa-cart-plus"></i>
+                Añadir al carrito
+              </button>
+              <button type="submit" class="btn btn-block js-add-to-cart-disabled" disabled="disabled">
+                No disponible
+              </button>
+              {% else %}
+              <button class="btn btn-block js-add-to-cart-disabled" disabled="disabled">
+                No disponible
+              </button>
+              {% endif %}
+            </div>
+          </div>
+        </form>
+        {% if settings.enable_share_products and
+          ( settings.facebook_link is not empty
+            or settings.twitter_link is not empty
+            or settings.pinterest_link is not empty
+            or settings.google_link is not empty) %}
           <div class="product__social-share margin-top">
             <p class="product-features">Compartir</p>
             {% include '_social-share.twig' %}

@@ -23,7 +23,7 @@
       <thead>
         <tr>
           <th class="hidden-xs"></th>
-          <th>Producto</th>
+          <th class="table__product-description">Producto</th>
           <th>Cantidad</th>
           <th class="text-right">Precio</th>
           <th></th>
@@ -60,7 +60,7 @@
           <td class="cart__resume-table__product-amount">
             {{ item.total | money('symbol', 'code') }}
           </td>
-          <td width="5%">
+          <td class="cart__resume-table__product-remove-column" width="5%">
             <form action="/carrito/eliminar" method="post" class="text-center">
               <input type="hidden" name="_method" value="delete">
               <input type="hidden" name="id" value="{{ item.id }}">
@@ -86,12 +86,12 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row go-payment">
   <div class="col-sm-12">
-    <div class="pull-left">
+    <div class="pull-left go-payment__buy-more">
       <a href="/productos" class="btn btn-lg text-uppercase">{{ settings.cart_btn_more_text }}</a>
     </div>
-    <div class="pull-right">
+    <div class="pull-right go-payment__buy-now">
       <a href="/checkout" class="btn btn-lg text-uppercase">{{ settings.cart_btn_buy_text }}</a>
     </div>
   </div>

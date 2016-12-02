@@ -97,26 +97,18 @@
         {% include '_search_form.twig' with { 'class' : 'col-xs-12 col-md-3 main-search', 'visibility' : 'hidden-sm' } %}
       </div>
         <ul class="nav navbar-nav topnav-menu">
-        {% for menu_item in menus.main %}
-          {% if menu_item.children | length >= 1 %}
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">{{ menu_item.name | capitalize }} <span class="caret"></span></a>
-              {% if menu_item.children | length > 1 %}
-                <ul class="dropdown-menu">
-                {% for child in menu_item.children %}
-                  {% include "_nav-children.twig" with { 'menu_item' : child } %}
-                {% endfor %}
-               </ul>
-             {% endif %}
-            </li>
+        {% for link in menus.main %}
+          {% if link.children | length > 0 %}
+            {% include '_nav-item.twig' %}
           {% else %}
-          <li class="topnav-menu__link">
-            <a class="topnav-menu--color" href="{{ menu_item.url }}">
-            {{ menu_item.name }}
-            </a>
-          </li>
+            <li class="main-menu__link-item">
+              <a href="{{ link.url }}">
+                {{ link.name }}
+              </a>
+            </li>
           {% endif %}
         {% endfor %}
+
         {% if store.customer_accounts_enabled_or_optional %}
           {% if customer %}
             <li class="visible-xs visible-sm topnav-menu__link">

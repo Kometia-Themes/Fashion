@@ -48,18 +48,6 @@
               "id": "main_menu_links_color_hover",
               "label": "Sobre vínculos",
               "default": "#01A9DB"
-            },
-            {
-              "type": "color",
-              "id": "main_menu_links_text_color_hover",
-              "label": "Sobre vínculos texto",
-              "default": "#FFFFFF"
-            },
-            {
-              "type": "color",
-              "id": "main_menu_links_bg_color_hover",
-              "label": "Sobre vínculos fondo",
-              "default": "#01A9DB"
             }
           ]
         },
@@ -598,7 +586,7 @@
             },
             {
               "type": "image",
-              "id": "favicon",
+              "id": "favicon.png",
               "max-width": 32,
               "max-height": 32,
               "label": "Seleccionar Favicon",
@@ -633,9 +621,15 @@
             },
             {
               "type": "text",
-              "id": "footer_mailing_list_text",
+              "id": "footer_mailing_list_title",
               "label": "Título newsletter",
-              "default": "Suscríbete para recibir ofertas."
+              "default": "¡Entérate de nuestras ofertas!"
+            },
+            {
+              "type": "text",
+              "id": "footer_mailing_list_text",
+              "label": "Texto newsletter",
+              "default": "Entérate antes que nadie de las mejores promociones, nuevos estilos, tendencias del momento y mucho más…"
             },
             {
               "type": "checkbox",
