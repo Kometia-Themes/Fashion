@@ -7,11 +7,11 @@
   {% endif %}
 
   {% for index, link in pagination.links %}
-  {% if index == pagination.current %}
-  <li class="page-item active"><a class="page-link">{{ index }}</a></li>
-  {% else %}
-  <li class="page-item"><a class="page-link" href="{{ link }}">{{ index }}</a></li>
-  {% endif %}
+    {% if index == pagination.current %}
+    <li class="page-item active"><a class="page-link">{{ index }}</a></li>
+    {% else %}
+    <li class="page-item"><a class="page-link" href="{{ link }}">{{ index }}</a></li>
+    {% endif %}
   {% endfor %}
 
   {% if pagination.current == pagination.last %}

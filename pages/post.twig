@@ -12,11 +12,7 @@
     <p><em>{{ post.published_at | datetime }}</em></p>
     <p class="post__content">{{ post.content }}</p>
 
-    {% if settings.enable_share_blog and
-      ( settings.facebook_link is not empty
-        or settings.twitter_link is not empty
-        or settings.pinterest_link is not empty
-        or settings.google_link is not empty) %}
+    {% if settings.enable_share_blog %}
       <hr class="divider">
       {% include '_social-share.twig' %}
     {% endif %}

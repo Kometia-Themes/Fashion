@@ -9,7 +9,7 @@
   </div>
   <div class="row">
     <div class="col-sm-12">
-      <form action="/cuenta/login" method="POST" role="form" class="login-form">
+      {% form 'customer_login' 'role="form" class="login-form"' %}
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-2">
             <div class="form-group">
@@ -41,7 +41,7 @@
             <a href="/cuenta/recuperar">¿Olvidaste tu contraseña?</a>
           </div>
         </div>
-      </form>
+      {% endform %}
     </div>
   </div>
 </div>

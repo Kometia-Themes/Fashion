@@ -12,7 +12,7 @@
 
   <div class="row">
     <div class="col-sm-12 col-md-6 col-md-offset-3">
-      <form action="/cuenta/recuperar" method="POST" role="form" class="login-form">
+      {% form 'customer_recover_password' 'role="form" class="login-form"' %}
         <div class="form-group">
           <div class="input-group input-group-lg login-form__input">
             <input type="email" class="form-control input-lg" id="email" name="email" placeholder="Correo electrónico" required>
@@ -24,7 +24,7 @@
         <p>
           <a href="/cuenta/login">Cancelar</a>
         </p>
-      </form>
+      {% endform %}
     </div>
   </div>
 </div>

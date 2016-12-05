@@ -3,32 +3,32 @@
 {% block body %}
 {% include '_breadcrumb.twig' with { level: 'Productos', sublevel: '' } %}
 <div class="container">
-<div class="row">
-  <div class="col-xs-12 section__title">
-    <h1 class="section-heading section--italic">{{ page_title }}</h1>
+  <div class="row">
+    <div class="col-xs-12 section__title">
+      <h1 class="section-heading section--italic">{{ page_title }}</h1>
+    </div>
   </div>
-</div>
 
-{% if products.count == 0 %}
-  {% include '_product-placeholder.twig' %}
-{% else %}
+  {% if products.count == 0 %}
+    {% include '_product-placeholder.twig' %}
+  {% else %}
 
-<div class="row">
-  <div class="col-sm-12">
-    {% for products_row in products | batch(3) %}
-    <div class="row">
-      {% for product in products_row %}
-      <div class="col-xs-12 col-sm-4">
-        {% include '_product-card.twig' %}
+  <div class="row">
+    <div class="col-sm-12">
+      {% for products_row in products | batch(3) %}
+      <div class="row">
+        {% for product in products_row %}
+        <div class="col-xs-12 col-sm-4">
+          {% include '_product-card.twig' %}
+        </div>
+        {% endfor %}
       </div>
       {% endfor %}
     </div>
-    {% endfor %}
   </div>
-</div>
 
-{% include '_pagination.twig' %}
+  {% include '_pagination.twig' %}
+  {% endif %}
 </div>
-{% endif %}
 
 {% endblock %}

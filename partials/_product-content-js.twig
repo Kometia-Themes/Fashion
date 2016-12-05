@@ -69,6 +69,12 @@
         } else {
           jQuery('#js-price-preview').html("<span class=\"product-price-data-price\">" + formatMoney(sku.price) + "</span>");
         }
+      } else {
+        jQuery('#js-add-to-cart').addClass('disabled').attr('disabled', 'disabled')
+        jQuery('#js-price-preview').html('<span class="product-price-data-price">No disponible</span>');
+      }
+
+      if (sku) {
         var image = sku.image_url;
         if (!firstLoad) {
           {% if settings.enable_product_image_zoom %}
@@ -86,93 +92,6 @@
           {% endif %}
         }
         firstLoad = false;
-      } else {
-        jQuery('#js-add-to-cart').addClass('disabled').attr('disabled', 'disabled')
-        jQuery('#js-price-preview').html('No disponible');
-      }
-    });
-  });
-</script>
-{% endif %}
-
-
-{% if product.is_in_stock %}
-<script type="text/javascript">
-  var skus = {{ product.skus | json }};
-
-  $('.add-to-cart-disabled').hide();
-  showSelectedSku();
-
-  function showSelectedSku() {
-  // only one sku, no variants to validate
-  if (skus.length == 1) {
-    return updateSkuControls(skus[0]);
-  }
-
-  // get the product variant modifiers from the selects
-  var selectedModifiers = [];
-  $('.js-variant-select').each(function() {
-    selectedModifiers.push($(this).find(":selected").text());
-  });
-
-  var foundSku = null;
-  // check if there's an sku with the selected modifiers
-  skus.forEach(function(sku) {
-    var modifiers = sku.modifiers;
-    if ($(modifiers).not(selectedModifiers).length === 0 && $(selectedModifiers).not(modifiers).length === 0) {
-      foundSku = sku;
-      return false;
-    }
-  });
-
-  return updateSkuControls(foundSku);
-}
-
-function updateSkuControls(sku) {
-  var enabledAddButton = $('.js-add-to-cart');
-  var disabledAddButton = $('.js-add-to-cart-disabled');
-  var comparedPriceElement = $('.js-product-price-compared-amount');
-
-  if (sku !== null) {
-    if (sku.stock_policy !== 'none' && sku.in_stock < 1) {
-      sku = null;
-    }
-  }
-
-  if (sku !== null) {
-    disabledAddButton.hide();
-    enabledAddButton.show();
-    $('input[name=sku_id]').val(sku.id);
-    $('.js-product-price-amount').html(formatPrice(sku.price));
-    if (sku.compared_price != 0) {
-      comparedPriceElement.html(formatPrice(sku.compared_price)).show();
-    } else {
-      comparedPriceElement.hide();
-    }
-  } else {
-    disabledAddButton.show();
-    enabledAddButton.hide();
-      //comparedPriceElement.hide();
-    }
-
-    return sku;
-  }
-
-  function formatPrice(price) {
-    price /= 100;
-    price = price.toFixed(2);
-    price = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    return '$ ' + price + ' {{ store.currency }}';
-  }
-
-  $('.js-variant-select').change(function() {
-    showSelectedSku();
-  });
-  $(function() {
-    $('.js-variant-select').selectpicker({style: 'btn-select btn-block', size: 5});
-    $('.js-variant-select').selectpicker().each(function() {
-      if (this.nodeName == "DIV") {
-        $(this).find('ul.dropdown-menu li:first').css('display', 'none');
       }
     });
   });
