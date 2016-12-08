@@ -120,6 +120,7 @@
       "featured_products_title": "Productos destacados",
       "featured_products_limit": "8",
       "main_banner_image": "",
+      "enable_banner_image": true,
       "main_banner_overlay": true,
       "main_banner_background_color": "#f4f4f4",
       "main_banner_title": "Lorem Ipsum",

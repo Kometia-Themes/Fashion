@@ -1013,8 +1013,15 @@
       "settings": [{
         "type": "image",
         "id": "main_banner_image",
-        "label": "Imagen de fondo"
-      }, {
+        "label": "Imagen de fondo",
+        "default": ""
+      },{
+        "type": "checkbox",
+        "id": "enable_banner_image",
+        "label": "Mostrar imagen de fondo",
+        "default": true
+      },
+       {
         "type": "color",
         "id": "main_banner_background_color",
         "label": "Color de fondo",

@@ -1,9 +1,5 @@
 {% if link.children | length > 0 %}
-{% if loop.index0 %}
-<li class="main-menu_dropdown">
-{% else %}
-<li class="main-menu_submenu">
-{% endif %}
+  <li class="main-menu_dropdown">
   <a class="multi" tabindex="-1" href="#">{{ link.name }} <i class="fa fa-angle-right arrow-right" aria-hidden="true"></i></a>
   <ul class="main-menu_menu">
     {% for children in link.children %}

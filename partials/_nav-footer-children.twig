@@ -1,19 +1,10 @@
-{% if menu_item.children | length >= 1 %}
-<li class="dropdown-menu">
-  <a href="{{ menu_item.url }}" class="dropdown-toggle" data-toggle="dropdown-menu" role="button" aria-haspopup="true" aria-expanded="true">{{ menu_item.name | capitalize }} <span class="caret"></span></a>
-  {% if menu_item.children | length >= 1 %}
-    <li class="dropdown-menu">
-      <ul class="dropdown">
-      {% for child in menu_item.children %}
-        {% include "_nav-footer-children.twig" with { 'menu_item' : child } %}
-      {% endfor %}
-     </ul>
-   </li>
- {% endif %}
-</li>
+{% if menu_item.children | length > 0 %}
+  {% for child in menu_item.children %}
+    {% include "_nav-footer-children.twig" with { 'menu_item' : child } %}
+  {% endfor %}
 {% else %}
-<li class="topnav-menu__link">
-  <a class="topnav-menu--color" href="{{ menu_item.url }}">
+<li class="menu-foo-link">
+  <a class="submenu__link--color" href="{{ menu_item.url }}">
   {{ menu_item.name }}
   </a>
 </li>
