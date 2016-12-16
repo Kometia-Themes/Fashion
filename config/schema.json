@@ -1154,6 +1154,11 @@
         "label": "Habilitar zoom en imagen principal",
         "default": true
       }, {
+        "type": "checkbox",
+        "id": "show_vendor_name",
+        "label": "Mostrar marca del producto",
+        "default": true
+      }, {
         "type": "select",
         "id": "product_thumbnail_form",
         "label": "Tipo de miniaturas",

@@ -23,10 +23,9 @@
       <div class="col-sm-6">
         <h1 class="product-single__name">{{ product.name }}</h1>
         {% if not product.is_in_stock %}<span class="label label-danger">Agotado</span>{% endif %}
-          {% if product.vendor_name is not null %}
+          {% if settings.show_vendor_name and product.vendor_name is not empty %}
             <p class="vendor">Marca: <strong>{{ product.vendor_name }}</strong></p>
           {% endif %}
-
         <div class="product-single__price" id="js-price-preview">
           <del class="compared-price"><span class="inner">{{ product.compared_price is defined ? product.compared_price | money('symbol', 'code') : '' }}</span></del><br>
           <span class="product-price-data-price">{{ product.price | money('symbol', 'code') }}</span>
