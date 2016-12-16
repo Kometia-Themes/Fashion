@@ -417,6 +417,8 @@ a:active, a:focus { outline: none;}
   color: {{ settings.main_menu_links_color }};
   background-color: {{ settings.main_menu_links_bg_color }};
 }
+.topnav__menu a.user { color: {{ settings.second_menu_links_color }} !important; }
+.topnav__menu a.user:hover { color: {{ settings.second_menu_links_color_hover }} !important; }
 .topnav-menu--color:hover {
   color: {{ settings.main_menu_links_color }};
   background-color: {{ settings.main_menu_links_color_hover }};
@@ -432,7 +434,7 @@ sup.cart-notification {
   margin-left: .2em;
 }
 .topnav-menu .main-menu_menu + ul { padding: 0; }
-topnav-menu
+
 .main-menu_dropdown + ul + li {
   padding: 0;
 } 
@@ -511,7 +513,7 @@ a.multi:hover { text-decoration: none; }
   }
   .main-menu_menu a:hover {
     color: {{ settings.main_menu_links_color  }} !important; padding: 1em; display: block; text-decoration: none;
-    background-color: {{ settings.main_menu_links_color_hover }} !important;
+    background-color: {{ settings.main_menu_background_color }} !important;
   }
   a.multi:hover  > .arrow-right {
     -webkit-transform: rotate(90deg);
@@ -557,15 +559,15 @@ a.multi:hover { text-decoration: none; }
 @media (min-width: 768px) {
   .user + .tooltip > .tooltip-inner {
     display: block;
-    background-color: {{ settings.main_menu_links_color_hover }};
-    color: {{ settings.main_menu_links_color }};
-    border: 1px solid {{ settings.main_menu_links_color_hover }};
+    background-color: {{ settings.second_menu_links_color_hover }};
+    color: {{ settings.second_menu_links_color | contrast_color }};
+    border: 1px solid {{ settings.second_menu_links_color_hover }};
     padding: 10px;
     font-size: 12px;
   }
   .user + .tooltip.bottom > .tooltip-arrow {
     display: block;
-    border-bottom: 5px solid {{ settings.main_menu_links_color_hover }};
+    border-bottom: 5px solid {{ settings.second_menu_links_color_hover }};
   }
   .main-nav .nav.navbar-nav > li.visible-xs.visible-sm {
       float: none;
@@ -807,6 +809,17 @@ h1, h2, h3, h4, h5, h6 {
     padding: 18em 0 2em;
   }
 }
+.slide1 .title.title__big.title--white { color: {{ settings.slide_1_title_color }}; }
+.slide2 .title.title__big.title--white { color: {{ settings.slide_2_title_color }}; }
+.slide3 .title.title__big.title--white { color: {{ settings.slide_3_title_color }}; }
+
+.slide1 .title.title__medium.title--white.title--uppercase { color: {{ settings.slide_1_description_color }}; }
+.slide2 .title.title__medium.title--white.title--uppercase { color: {{ settings.slide_2_description_color }}; }
+.slide3 .title.title__medium.title--white.title--uppercase { color: {{ settings.slide_3_description_color }}; }
+
+.slide1 .btn__slide { color: {{ settings.slide_1_btn_color }}; }
+.slide2 .btn__slide { color: {{ settings.slide_2_btn_color }}; }
+.slide3 .btn__slide { color: {{ settings.slide_3_btn_color }}; }
 
 /* * * * * * * * * * * */
 /* Placeholder Section */

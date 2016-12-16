@@ -944,7 +944,7 @@
       }, {
         "type": "checkbox",
         "id": "slider_text_has_overlay",
-        "label": "Sombre en textos"
+        "label": "Sombra en textos"
       }]
     }]
   }, {
