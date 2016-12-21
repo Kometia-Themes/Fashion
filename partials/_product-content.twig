@@ -51,7 +51,7 @@
                 <h5 class="product__heading">Cantidad</h5>
                 <select class="selectpicker" title="Cantidad de producto" name="quantity" id="quantity">
                   {% for qty in 1..5 %}
-                  <option value="{{ qty }}" {{ qty == item.quantity ? ' selected="selected"' : null }}>{{ qty }}</option>
+                  <option value="{{ qty }}" {{ qty == item.quantity ? ' selected="selected"' : 'null' }}>{{ qty }}</option>
                   {% endfor %}
                 </select>
               </div>
