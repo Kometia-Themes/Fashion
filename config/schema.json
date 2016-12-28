@@ -944,7 +944,7 @@
       }, {
         "type": "checkbox",
         "id": "slider_text_has_overlay",
-        "label": "Sombre en textos"
+        "label": "Sombra en textos"
       }]
     }]
   }, {
@@ -1013,8 +1013,15 @@
       "settings": [{
         "type": "image",
         "id": "main_banner_image",
-        "label": "Imagen de fondo"
-      }, {
+        "label": "Imagen de fondo",
+        "default": ""
+      },{
+        "type": "checkbox",
+        "id": "enable_banner_image",
+        "label": "Mostrar imagen de fondo",
+        "default": true
+      },
+       {
         "type": "color",
         "id": "main_banner_background_color",
         "label": "Color de fondo",
@@ -1145,6 +1152,11 @@
         "type": "checkbox",
         "id": "enable_product_image_zoom",
         "label": "Habilitar zoom en imagen principal",
+        "default": true
+      }, {
+        "type": "checkbox",
+        "id": "show_vendor_name",
+        "label": "Mostrar marca del producto",
         "default": true
       }, {
         "type": "select",
