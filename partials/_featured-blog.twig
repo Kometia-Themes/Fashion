@@ -11,7 +11,7 @@
       <div class="col-xs-12 col-sm-4">
         <div class="blog-grid-item">
             {% if post.image_url is not null %}
-          <a class="blog-grid-item__thumb-link grid-item__thumb-image " href="/blogs/{{ blog.permalink }}/posts/{{ post.permalink }}" style="background-image: url('{{ post.image_url }}?w=370&h=240&fit=crop');">
+          <a class="blog-grid-item__thumb-link grid-item__thumb-image " href="/blogs/{{ blog.permalink }}/posts/{{ post.permalink }}" style="background-image: url('{{ post.image_url }}&w=370&h=240&fit=crop');">
             {% else %}
           <a class="blog-grid-item__thumb-link grid-item__thumb-no-image " href="/blogs/{{ blog.permalink }}/posts/{{ post.permalink }}">
             {% endif %}

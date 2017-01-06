@@ -44,9 +44,9 @@
             <td width="5%" class="hidden-xs">
               <a href="/productos/{{ product.permalink }}">
                 {% if product.image_url %}
-                <img src="{{ product.image_url }}?w=128&h=128" class="img img-responsive center-block pull-left" alt="{{ product.name | escape  }}">
+                <img src="{{ product.image_url }}&w=128&h=128" class="img img-responsive center-block pull-left" alt="{{ product.name | escape  }}">
                 {% else %}
-                <img src="{{ 'placeholders/product-11.jpg' | global_img_url }}?w=128&h=128" class="img img-responsive center-block pull-left" alt="{{ product.name | escape  }}">
+                <img src="{{ 'placeholders/product-11.jpg' | global_img_url }}&w=128&h=128" class="img img-responsive center-block pull-left" alt="{{ product.name | escape  }}">
                 {% endif %}
               </a>
             </td>
