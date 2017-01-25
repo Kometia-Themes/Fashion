@@ -13,6 +13,14 @@ $(document).ready(function() {
     e.preventDefault();
   });
 
+  $('ul.main-menu_menu').mouseleave(function() {
+      $(this).hide();
+  });
+
+  $(window).click(function() {
+    $('ul.main-menu_menu' ).css({"display": "none"});
+  });
+
   $("p:contains('<meta charset=\"utf-8\" \/>')").remove();
 
   var $adminBar = $('#admin-bar-iframe');

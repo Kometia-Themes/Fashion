@@ -179,7 +179,7 @@ a:active, a:focus { outline: none;}
 }
 .navbar-default {border: none;}
 .main-nav__position {position: relative;}
-.second-menu {background-color: {{ settings.second_menu_background_color }}};
+.second-menu {background-color: {{ settings.second_menu_background_color }}; }
 .second-menu .brand-logo--second { color: {{ settings.second_menu_links_color }}; }
 .second-menu .brand-logo--second:hover { color: {{ settings.second_menu_links_color_hover }}; }
 .second-menu .brand-logo--second .second-logo {}
@@ -464,7 +464,7 @@ a.multi:hover { text-decoration: none; }
 .main-menu__item { display: block; }
 .main-menu__link { 
   display: block; padding: 1em; text-decoration: none !important;
-  color: {{ settings.main_menu_links_color | contrast_color }} !important; 
+  color: {{ settings.main_menu_links_color }} !important; 
 }
 
 @media(max-width: 767px) {
