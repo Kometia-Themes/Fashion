@@ -46,18 +46,12 @@
   </div>
   {% else %}
 
-  <div class="row">
-    <div class="col-sm-12">
-      {% for products_row in products | batch(3) %}
-      <div class="row">
-        {% for product in products_row %}
-        <div class="col-xs-12 col-sm-4">
+  <div class="row symmetrical-container">
+      {% for product in products %}
+        <div class="col-xs-6 col-sm-3 symmetrical">
           {% include '_product-card.twig' %}
         </div>
-        {% endfor %}
-      </div>
       {% endfor %}
-    </div>
   </div>
 
   {% include '_pagination.twig' %}

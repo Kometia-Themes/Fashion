@@ -38,11 +38,11 @@
               <th class="text-right">Precio</th>
             </tr>
           </thead>
-          <tbody></tbody>
+          <tbody>
           {% for product in results.products %}
-          <tr>
-            <td width="5%" class="hidden-xs">
-              <a href="/productos/{{ product.permalink }}">
+          <tr class="js-clickable" data-href="/productos/{{ product.permalink }}{% if product.sku.permalink != 'default' %}/{{ product.sku.permalink }}{% endif %}">
+            <td width="5%" class="hidden-xs js-clickable">
+              <a href="/productos/{{ product.permalink }}{% if product.sku.permalink != 'default' %}/{{ product.sku.permalink }}{% endif %}">
                 {% if product.image_url %}
                 <img src="{{ product.image_url }}&w=128&h=128" class="img img-responsive center-block pull-left" alt="{{ product.name | escape  }}">
                 {% else %}
@@ -51,7 +51,7 @@
               </a>
             </td>
             <td>
-              <a href="/productos/{{ product.permalink }}">
+              <a href="/productos/{{ product.permalink }}{% if product.sku.permalink != 'default' %}/{{ product.sku.permalink }}{% endif %}">
                 {{ product.name }}
               </a>
             </td>
@@ -60,9 +60,21 @@
             </td>
           </tr>
           {% endfor %}
+          </tbody>
         </table>
       </div>
     </div>
   {% endif %}
 </div>
+{% endblock %}
+
+{% block body_js %}
+{{ parent() }}
+<script type="text/javascript">
+$(function () {
+    $('.table > tbody > tr.js-clickable').on('click', function(e) {
+      window.location = $(this).data('href');
+    });
+  });
+</script>  
 {% endblock %}

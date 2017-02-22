@@ -16,17 +16,15 @@
       <span class="visually-hidden">Compartir</span>
     </a>
   {% endif %}
-
   {% if settings.share_twitter %}
     <a target="_blank" href="//twitter.com/share?text={{ share_title }}&amp;url={{ permalink_url }}" class="btn btn-sm btn-share share-twitter" title="Tuitear en Twitter">
       <i class="fa fa-twitter-square" aria-hidden="true"></i>
       <span class="visually-hidden">Tuitear</span>
     </a>
   {% endif %}
-
   {% if product.image_url or post.image_url %}
     {% if settings.share_pinterest %}
-      <a target="_blank" href="//pinterest.com/pin/create/button/?url={{ permalink_url }}&amp;media=http:{% if 'product' in template %}{{ product.image_url }}{% else %}{{ post.image_url }}{% endif %}&amp;description={{ share_title }}" class="btn btn-sm btn-share share-pinterest" title="Pinear en Pinterest">
+      <a target="_blank" href="//pinterest.com/pin/create/button/?url={{ permalink_url }}&amp;media={% if 'product' in template %}{{ product.image_url }}{% else %}{{ post.image_url }}{% endif %}&amp;description={{ share_title }}" class="btn btn-sm btn-share share-pinterest" title="Pinear en Pinterest">
         <i class="fa fa-pinterest-square" aria-hidden="true"></i>
         <span class="visually-hidden">Pinear</span>
       </a>
