@@ -15,7 +15,7 @@
     <p class="product-card__title"><a href="/productos/{{ product.permalink }}">{{ product.name }}</a></p>
     <p class="product-card__price"> <span class="final-price">{{ product.price | money('symbol', 'code') }}</span></p>
       <p class="compared__price">
-        {% if product.compared_price > 0 and product.compared_price is not null  %}
+        {% if product.compared_price > product.price %}
         Precio normal: <span class="compared-price"><span class="inner">{{ product.compared_price | money('symbol', 'code') }}</span></span>
       {% else %}
         <br><br>
