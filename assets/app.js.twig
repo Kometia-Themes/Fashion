@@ -7,6 +7,14 @@ var disabled = function() {
 }
 
 $(document).ready(function() {
+  $('.categories__container .category .dropdown .dropdown-caret').on('click', function(e) {
+    $(this).next('.submenu-dropdown').toggle();
+    $(this).parent().siblings().find('.submenu-dropdown').stop(true,false,true).css('display', 'none');
+    $(this).siblings().children('.submenu-dropdown').stop(true,false,true).css('display', 'none');
+    e.stopPropagation();
+    e.preventDefault();
+  });
+
   $('a.multi').on("click", function(e) {
     $(this).next('ul').toggle();
     e.stopPropagation();
