@@ -1,4 +1,4 @@
-{% include '_breadcrumb.twig' with { level: 'Productos', sublevel: product.name } %}
+{% include '_breadcrumb.twig' with { level: 'Productos', sublevel: product.name, variant: 'product' } %}
 <div class="product-single">
   <div class="container margin-top">
     <div class="row">
@@ -10,13 +10,16 @@
         <img src="{{ product.image_url }}" alt="{{ product.name }}" id="zoom">
         {% endif %}
         </div>
+        {# Loop for Slider Nav #}
         {% if product.images | length > 1 %}
-        <div class="slider-product js-slider">
-          {% for thumbnail in product.images %}
-          <div class="slider-product__item">
-            <img class="slider-product--image" src="{{ thumbnail.url }}" alt="{{ product.name }}">
+        <div class="carousel-container">
+          <div class="slider-product js-slider">
+            {% for thumbnail in product.images %}
+            <div class="slider-product__item">
+              <img class="slider-product--image" src="{{ thumbnail.url }}" alt="{{ product.name }}">
+            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
         {% endif %}
       </div>
@@ -34,13 +37,15 @@
           <form class="product_selection" action="/carrito/agregar" method="post">
           <input type="hidden" name="sku_id" value="{{ product.sku.id }}" id="js-sku-id">
           <div class="row">
-            {% for modifier, options in product.skus_modifiers %}
+            {% for attribute, attribute_variants in product.skus_modifiers %}
+              {% set step = loop.index - 1 %}
+              {% set default_variant = product.sku.modifiers[step] %}
             <div class="col-xs-12 col-md-6">
               <div class="product__vars">
-                <h5 class="product__heading">{{ modifier }}</h5>
-                <select class="selectpicker js-variant-select" title="Elegir {{ modifier }}" name="{{ loop.index0 }}" id="{{ loop.index0 }}">
-                  {% for option in options %}
-                  <option value="{{ option }}" {% if loop.first %}selected="selected"{% endif %}>{{ option }}</option>
+                <h5 class="product__heading">{{ attribute }}</h5>
+                <select id="{{ attribute |lower}}" class="selectpicker js-variant-select" title="Elegir {{ attribute }}" name="{{ loop.index0 }}" id="{{ loop.index0 }}">
+                  {% for variant in attribute_variants %}
+                  <option value="{{ variant }}" {% if default_variant == variant %}selected="selected"{% endif %}>{{ variant }}</option>
                   {% endfor %}
                 </select>
               </div>

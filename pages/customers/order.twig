@@ -52,7 +52,7 @@
             {% for item in order.items %}
               <tr>
                 <td>
-                  <a href="/productos/{{ item.permalink }}">
+                  <a href="/productos/{{ item.permalink }}{% if item.sku.permalink != 'default' %}/{{ item.sku.permalink }}{% endif %}">
                     {{ item.name }}
                   </a>
                 </td>

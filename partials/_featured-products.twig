@@ -14,19 +14,13 @@
       </div>
     </div>
     {% endif %}
-    <div class="row">
-      <div class="col-sm-12">
+    <div class="row symmetrical-container">
         {% set limit = settings.featured_products_limit is not empty ? min(0+settings.featured_products_limit, 50) : 50 %}
-        {% for products_row in featured_products | slice(0, limit) | batch(4) %}
-        <div class="row">
-          {% for product in products_row %}
-          <div class="col-xs-12 col-sm-6 col-md-3">
+        {% for product in featured_products | slice(0, limit) %}
+          <div class="col-xs-6 col-sm-6 col-md-3 symmetrical">
             {% include "_product-card.twig" %}
           </div>
-          {% endfor %}
-        </div>
         {% endfor %}
-      </div>
     </div>
   </div>
 </div>

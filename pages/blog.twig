@@ -13,12 +13,14 @@
     {% for post in posts %}
       <div class="blog-posts__post">
         <div class="row">
+        {% if settings.featured_blog_thumbnails_enabled %}
           {% if post.image_url is not null %}
           <div class="col-xs-12 col-sm-3 image_square blog-posts__image blog-posts__with-image" style="background-image:url('{{ post.image_url }}');"></div>
           {% else %}
           <div class="col-xs-12 col-sm-3 image_square blog-posts__image blog-posts__no-image"></div>
           {% endif %}
-          <div class="col-xs-12 col-sm-9">
+        {% endif %}
+          <div class="col-xs-12{% if settings.featured_blog_thumbnails_enabled %} col-sm-9{% endif %}">
             <h3 class="blog-posts__post-title">
               <a class="blog-posts__post-title" href="/blogs/{{ blog.permalink }}/posts/{{ post.permalink }}">
                 {{ post.title }}

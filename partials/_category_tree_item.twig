@@ -1,10 +1,19 @@
+{% if category.children | length > 0 %}
+<li class="dropdown">
+<a class="category__link" href="/categorias/{{ category.permalink }}" role="button" aria-haspopup="true" aria-expanded="false">{{ category.title }}</a>
+<a class="dropdown-caret" href="#"><span class="caret"></span></a>
+  <ul class="submenu-dropdown">
+    {% for sub_category in category.children %}
+      {% include '_category_tree_item.twig' with { 'category' : sub_category, 'current'  : current } only %}
+    {% endfor %}
+  </ul>
+</li>
+{% else %}
 <li class="category__sidebar-item">
   {% if category.permalink == current.permalink %}
     <i class="fa fa-angle-right" aria-hidden="true"></i> {{ category.title | title }}
   {% else %}
-    <a class="category__item-link" href="/categorias/{{ category.permalink }}"><i class="fa fa-angle-right" aria-hidden="true"></i>{{ category.title | title }}</a>
+    <a class="category__link" href="/categorias/{{ category.permalink }}"><i class="fa fa-angle-right" aria-hidden="true"></i>{{ category.title | title }}</a>
   {% endif %}
-  {% for sub_category in category.children %}
-    {% include '_category_tree_item.twig' with { 'category' : sub_category, 'current'  : current } only %}
-  {% endfor %}
 </li>
+{% endif %}

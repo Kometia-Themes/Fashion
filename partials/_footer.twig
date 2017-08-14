@@ -2,6 +2,10 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-3 col-md-push-9 newsletter-foo">
+      {% if settings.footer_display_contact_data %}
+        <h3 class="newsletter-foo--title newsletter-foo__size newsletter-foo--title-color">Contacto</h3>
+        <p class="newsletter-foo--body-color">{{ settings.footer_contact_data | nl2br }}</p>
+      {% endif %}
       <h3 class="newsletter-foo--title newsletter-foo__size newsletter-foo--title-color">{{ settings.footer_mailing_list_title }}</h3>
       <p class="newsletter-foo--body-color">{{ settings.footer_mailing_list_text }}</p>
       {% form 'newsletter' %}
