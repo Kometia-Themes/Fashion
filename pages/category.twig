@@ -13,13 +13,13 @@
     <div class="col-md-3 categories-filter">
       <div class="sidebar">
         <h4>Categorías</h4>
-        <hr>
-        <div class="categories__container">
-        {% for category_element in categories %}
-          <ul class="category">
-          {% include '_category_tree_item.twig' with { 'category': category_element, 'current': category } only %}
-          </ul>
-        {% endfor %}
+        <div class="sidebar__content">
+          {% for categoryElement in categories %}
+            {% include '_category_tree_item.twig' with {
+              'category' : categoryElement,
+              'current'  : category
+            } only %}
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -28,19 +28,17 @@
     <div class="{% if has_categories %}col-md-9{% else %}col-md-12{% endif %}">
     {% if products.count == 0 %}
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 text-center">
           <p>Lo sentimos, no hay productos que conicidan con su búsqueda.</p>
         </div>
       </div>
     {% else %}
-      {% set batches = has_categories ? 3 : 4 %}
-      {% set cols = has_categories ? 4 : 3 %}
       <div class="row">
         <div class="col-xs-12 featured-products">
-          {% for products_row in products | batch(batches) %}
+          {% for products_row in products | batch(4) %}
           <div class="row">
             {% for product in products_row %}
-              <div class="col-xs-12 col-sm-6 col-md-{{ cols }}">
+              <div class="col-xs-6 col-sm-6 col-md-3">
                 {% include "_product-card.twig" %}
               </div>
             {% endfor %}
@@ -55,4 +53,19 @@
     </div>
   </div>
 </div>
+{% endblock %}
+
+{% block body_js %}
+{{ parent() }}
+<script type="text/javascript">
+  $(function() {
+    $(".sidebar__list-toggle").click(function(e){
+      e.preventDefault();
+      $(this).children(".fa").toggleClass('fa-chevron-up fa-chevron-down');
+      $(this).next(".categories-filter .sidebar__submenu").slideToggle( "slow", function() {
+        $(this).parents().closest().find(".fa").css({'color':'red'});
+      });
+    });
+  });
+</script>
 {% endblock %}
