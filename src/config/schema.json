@@ -207,19 +207,19 @@
           "settings": [
             {
               "type": "color",
-              "id": "slide__title_color",
+              "id": "slide_title_color",
               "label": "Títulos",
               "default": "#FFFFFF"
             },
             {
               "type": "color",
-              "id": "slide__description_color",
+              "id": "slide_description_color",
               "label": "Descripción",
               "default": "#FFFFFF"
             },
             {
               "type": "color",
-              "id": "slide__btn_color",
+              "id": "slide_btn_color",
               "label": "Botón",
               "default": "#FFFFFF"
             }
