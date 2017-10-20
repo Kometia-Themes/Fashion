@@ -259,10 +259,25 @@
           "settings": [
             {
               "type": "select",
-              "id": "base_font",
+              "id": "body_font",
               "label": "Tipografía",
               "default": "Google+Lato",
               "options": [
+                {
+                  "value": "Google+Alegreya",
+                  "label": "Alegreya",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Alegreya+Sans",
+                  "label": "Alegreya Sans",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Archivo+Narrow",
+                  "label": "Archivo Narrow",
+                  "group": "Google Web Fonts"
+                },
                 {
                   "value": "Google+Arvo",
                   "label": "Arvo",
@@ -274,13 +289,43 @@
                   "group": "Google Web Fonts"
                 },
                 {
+                  "value": "Google+BioRhyme",
+                  "label": "BioRhyme",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Bitter",
+                  "label": "Bitter",
+                  "group": "Google Web Fonts"
+                },
+                {
                   "value": "Google+Cabin",
                   "label": "Cabin",
                   "group": "Google Web Fonts"
                 },
                 {
+                  "value": "Google+Chivo",
+                  "label": "Chivo",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Cormorant",
+                  "label": "Cormorant",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Crimson+Text",
+                  "label": "Crimson Text",
+                  "group": "Google Web Fonts"
+                },
+                {
                   "value": "Google+Copse",
                   "label": "Copse",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Domine",
+                  "label": "Domine",
                   "group": "Google Web Fonts"
                 },
                 {
@@ -291,6 +336,21 @@
                 {
                   "value": "Google+Droid+Serif",
                   "label": "Droid Serif",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Eczar",
+                  "label": "Eczar",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Fira+Sans",
+                  "label": "Fira Sans",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Gentium+Basic",
+                  "label": "Gentium Basic",
                   "group": "Google Web Fonts"
                 },
                 {
@@ -309,6 +369,11 @@
                   "group": "Google Web Fonts"
                 },
                 {
+                  "value": "Google+Karla",
+                  "label": "Karla",
+                  "group": "Google Web Fonts"
+                },
+                {
                   "value": "Google+Kreon",
                   "label": "Kreon",
                   "group": "Google Web Fonts"
@@ -319,8 +384,28 @@
                   "group": "Google Web Fonts"
                 },
                 {
+                  "value": "Google+Libre+Baskerville",
+                  "label": "Libre Baskerville",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Libre+Franklin",
+                  "label": "Libre Franklin",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Lora",
+                  "label": "Lora",
+                  "group": "Google Web Fonts"
+                },
+                {
                   "value": "Google+Merriweather",
                   "label": "Merriweather",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Montserrat",
+                  "label": "Montserrat",
                   "group": "Google Web Fonts"
                 },
                 {
@@ -334,14 +419,69 @@
                   "group": "Google Web Fonts"
                 },
                 {
+                  "value": "Google+Poppins",
+                  "label": "Poppins",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+PT+Sans",
+                  "label": "PT Sans",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+PT+Serif",
+                  "label": "PT Serif",
+                  "group": "Google Web Fonts"
+                },
+                {
                   "value": "Google+Roboto",
                   "label": "Roboto",
                   "group": "Web Fonts"
                 },
                 {
+                  "value": "Google+Roboto+Slab",
+                  "label": "Roboto Slab",
+                  "group": "Web Fonts"
+                },
+                {
+                  "value": "Google+Rubik",
+                  "label": "Rubik",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Space+Mono",
+                  "label": "Space Mono",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Source+Sans+Pro",
+                  "label": "Source Sans Pro",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Source+Serif+Pro",
+                  "label": "Source Serif Pro",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Spectral",
+                  "label": "Spectral",
+                  "group": "Google Web Fonts"
+                },
+                {
                   "value": "ProximaNovaLight",
                   "label": "Proxima Nova",
                   "group": "Web Fonts"
+                },
+                {
+                  "value": "Google+Playfair+Display",
+                  "label": "Playfair Display",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Work+Sans",
+                  "label": "Work Sans",
+                  "group": "Google Web Fonts"
                 },
                 {
                   "value": "Helvetica, Arial, sans-serif",
@@ -405,6 +545,83 @@
               "id": "body_font_size",
               "label": "Tamaño",
               "default": "14px"
+            },
+            {
+              "type": "select",
+              "id": "body_font_type",
+              "label": "Estilo",
+              "default": " sans-serif",
+              "options": [
+                {
+                  "value": " sans-serif",
+                  "label": "Sans serif"
+                },
+                {
+                  "value": " serif",
+                  "label": "Serif"
+                },
+                {
+                  "value": " cursive",
+                  "label": "Display"
+                },
+                {
+                  "value": " cursive",
+                  "label": "Handwriting"
+                },
+                {
+                  "value": " monospace",
+                  "label": "Monospace"
+                }
+              ]
+            },
+            {
+              "type": "select",
+              "id": "body_font_weight",
+              "label": "Peso",
+              "default": "300",
+              "info": "Comprueba que existe el peso seleccionado en https://fonts.google.com.",
+              "options": [
+                {
+                  "value": "",
+                  "label": "Normal"
+                },
+                {
+                  "value": "100",
+                  "label": "Thin 100"
+                },
+                {
+                  "value": "200",
+                  "label": "Thin 200"
+                },
+                {
+                  "value": "300",
+                  "label": "Light 300"
+                },
+                {
+                  "value": "400",
+                  "label": "Regular 400"
+                },
+                {
+                  "value": "500",
+                  "label": "Medium 500"
+                },
+                {
+                  "value": "600",
+                  "label": "Medium 600"
+                },
+                {
+                  "value": "700",
+                  "label": "Bold 700"
+                },
+                {
+                  "value": "800",
+                  "label": "Bold 800"
+                },
+                {
+                  "value": "900",
+                  "label": "ExtraBold 900"
+                }
+              ]
             }
           ]
         },
@@ -418,6 +635,21 @@
               "default": "Google+Playfair+Display",
               "options": [
                 {
+                  "value": "Google+Alegreya",
+                  "label": "Alegreya",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Alegreya+Sans",
+                  "label": "Alegreya Sans",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Archivo+Narrow",
+                  "label": "Archivo Narrow",
+                  "group": "Google Web Fonts"
+                },
+                {
                   "value": "Google+Arvo",
                   "label": "Arvo",
                   "group": "Google Web Fonts"
@@ -428,13 +660,43 @@
                   "group": "Google Web Fonts"
                 },
                 {
+                  "value": "Google+BioRhyme",
+                  "label": "BioRhyme",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Bitter",
+                  "label": "Bitter",
+                  "group": "Google Web Fonts"
+                },
+                {
                   "value": "Google+Cabin",
                   "label": "Cabin",
                   "group": "Google Web Fonts"
                 },
                 {
+                  "value": "Google+Chivo",
+                  "label": "Chivo",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Cormorant",
+                  "label": "Cormorant",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Crimson+Text",
+                  "label": "Crimson Text",
+                  "group": "Google Web Fonts"
+                },
+                {
                   "value": "Google+Copse",
                   "label": "Copse",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Domine",
+                  "label": "Domine",
                   "group": "Google Web Fonts"
                 },
                 {
@@ -445,6 +707,21 @@
                 {
                   "value": "Google+Droid+Serif",
                   "label": "Droid Serif",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Eczar",
+                  "label": "Eczar",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Fira+Sans",
+                  "label": "Fira Sans",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Gentium+Basic",
+                  "label": "Gentium Basic",
                   "group": "Google Web Fonts"
                 },
                 {
@@ -463,6 +740,11 @@
                   "group": "Google Web Fonts"
                 },
                 {
+                  "value": "Google+Karla",
+                  "label": "Karla",
+                  "group": "Google Web Fonts"
+                },
+                {
                   "value": "Google+Kreon",
                   "label": "Kreon",
                   "group": "Google Web Fonts"
@@ -473,8 +755,28 @@
                   "group": "Google Web Fonts"
                 },
                 {
+                  "value": "Google+Libre+Baskerville",
+                  "label": "Libre Baskerville",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Libre+Franklin",
+                  "label": "Libre Franklin",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Lora",
+                  "label": "Lora",
+                  "group": "Google Web Fonts"
+                },
+                {
                   "value": "Google+Merriweather",
                   "label": "Merriweather",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Montserrat",
+                  "label": "Montserrat",
                   "group": "Google Web Fonts"
                 },
                 {
@@ -488,19 +790,69 @@
                   "group": "Google Web Fonts"
                 },
                 {
-                  "value": "Google+Playfair+Display",
-                  "label": "Playfair Display",
+                  "value": "Google+Poppins",
+                  "label": "Poppins",
                   "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+PT+Sans",
+                  "label": "PT Sans",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+PT+Serif",
+                  "label": "PT Serif",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Roboto",
+                  "label": "Roboto",
+                  "group": "Web Fonts"
                 },
                 {
                   "value": "Google+Roboto+Slab",
                   "label": "Roboto Slab",
+                  "group": "Web Fonts"
+                },
+                {
+                  "value": "Google+Rubik",
+                  "label": "Rubik",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Space+Mono",
+                  "label": "Space Mono",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Source+Sans+Pro",
+                  "label": "Source Sans Pro",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Source+Serif+Pro",
+                  "label": "Source Serif Pro",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Spectral",
+                  "label": "Spectral",
                   "group": "Google Web Fonts"
                 },
                 {
                   "value": "ProximaNovaLight",
                   "label": "Proxima Nova",
                   "group": "Web Fonts"
+                },
+                {
+                  "value": "Google+Playfair+Display",
+                  "label": "Playfair Display",
+                  "group": "Google Web Fonts"
+                },
+                {
+                  "value": "Google+Work+Sans",
+                  "label": "Work Sans",
+                  "group": "Google Web Fonts"
                 },
                 {
                   "value": "Helvetica, Arial, sans-serif",
@@ -564,6 +916,83 @@
               "id": "heading_font_size",
               "label": "Tamaño de Títulos",
               "default": "36px"
+            },
+            {
+              "type": "select",
+              "id": "heading_font_type",
+              "label": "Estilo",
+              "default": "sans-serif",
+              "options": [
+                {
+                  "value": " sans-serif",
+                  "label": "Sans serif"
+                },
+                {
+                  "value": " serif",
+                  "label": "Serif"
+                },
+                {
+                  "value": " cursive",
+                  "label": "Display"
+                },
+                {
+                  "value": " cursive",
+                  "label": "Handwriting"
+                },
+                {
+                  "value": " monospace",
+                  "label": "Monospace"
+                }
+              ]
+            },
+            {
+              "type": "select",
+              "id": "heading_font_weight",
+              "label": "Peso",
+              "default": "300",
+              "info": "Comprueba que existe el peso seleccionado en https://fonts.google.com.",
+              "options": [
+                {
+                  "value": "",
+                  "label": "Normal"
+                },
+                {
+                  "value": "100",
+                  "label": "Thin 100"
+                },
+                {
+                  "value": "200",
+                  "label": "Thin 200"
+                },
+                {
+                  "value": "300",
+                  "label": "Light 300"
+                },
+                {
+                  "value": "400",
+                  "label": "Regular 400"
+                },
+                {
+                  "value": "500",
+                  "label": "Medium 500"
+                },
+                {
+                  "value": "600",
+                  "label": "Medium 600"
+                },
+                {
+                  "value": "700",
+                  "label": "Bold 700"
+                },
+                {
+                  "value": "800",
+                  "label": "Bold 800"
+                },
+                {
+                  "value": "900",
+                  "label": "ExtraBold 900"
+                }
+              ]
             }
           ]
         }

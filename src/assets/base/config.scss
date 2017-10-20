@@ -1,5 +1,6 @@
 $body_font: "{{ settings.body_font | remove('Google+') | replace({'+': ' '}) }}";
 $body_font_type: "{{ settings.body_font_type }}";
+$body_font_weight: "{{ settings.body_font_weight }}";
 $body_font_color: "{{ settings.body_font_color }}";
 $body_font_size: "{{ settings.body_font_size }}";
 $image_placeholder: "{{ 'placeholders/product-11.jpg' | global_img_url }}";
@@ -19,7 +20,8 @@ $footer_second_menu_background_color: "{{ settings.footer_second_menu_background
 $footer_second_menu_links_color: "{{ settings.footer_second_menu_links_color }}";
 $headings_color: "{{ settings.headings_color }}";
 $heading_font: "{{ settings.heading_font | remove('Google+') | replace({'+': ' '}) }}";
-$heading_font_type: "{{ settings.$heading_font_type }}";
+$heading_font_type: "{{ settings.heading_font_type }}";
+$heading_font_weight: "{{ settings.heading_font_weight }}";
 $input_border_color: "{{ settings.input_border_color }}";
 $main_banner_background_color: "{{ settings.main_banner_background_color }}";
 $main_banner_description_align: "{{ settings.main_banner_description_align }}";

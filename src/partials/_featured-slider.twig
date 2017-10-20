@@ -19,7 +19,7 @@
       <div class="arrow-container-right">
         <a class="arrow-element right-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
       </div>
-        <div class="container">
+        <div class="container-fluid">
           {% if settings.slider_has_overlay %}
           <div class="slider_overlay"></div>
           {% endif %}
@@ -31,7 +31,7 @@
                   <h1 class="title title__big">{{ settings['slide_'~i~'_title'] }}</h1>
                   {% endif %}
                   {% if settings['slide_'~i~'_title'] is not empty %}
-                  <h2 class="title title__medium title--uppercase"><em>{{ settings['slide_'~i~'_description'] }}</em></h2>
+                  <h2 class="title title__medium title--uppercase">{{ settings['slide_'~i~'_description'] }}</h2>
                   {% endif %}
                   {% if settings['slide_'~i~'_btn'] and settings['slide_'~i~'_btn_text'] is not empty and settings['slide_'~i~'_btn_buy_link'] is not empty %}
                     <a class="btn btn-base btn__slide {% if settings['slider_text_has_overlay'] %}btn__slide--shadow{% endif %}" href="{{ settings['slide_'~i~'_btn_buy_link'] }}">{{ settings['slide_'~i~'_btn_text'] }}</a>
