@@ -48,6 +48,30 @@
               "id": "main_menu_links_color_hover",
               "label": "Sobre vínculos",
               "default": "#01A9DB"
+            },
+            {
+              "type": "color",
+              "id": "main_menu_dropdown_links",
+              "label": "Vínculos en menú desplegable",
+              "default": "#666666"
+            },
+            {
+              "type": "color",
+              "id": "main_menu_dropdown_links_hover",
+              "label": "Sobre vínculos en menú desplegable",
+              "default": "#ffffff"
+            },
+            {
+              "type": "color",
+              "id": "main_menu_dropdown_bg",
+              "label": "Fondo de vínculos en menú desplegable",
+              "default": "#eeeeee"
+            },
+            {
+              "type": "color",
+              "id": "main_menu_dropdown_bg_hover",
+              "label": "Fondo de sobre vínculos en menú desplegable",
+              "default": "#01A9DB"
             }
           ]
         },

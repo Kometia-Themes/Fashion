@@ -444,15 +444,19 @@ header.header.scrolled .topnav.second-menu {
   color: $main_menu_links_color_hover !important;
   background-color: transparent !important;
 }
-.navbar-toggle:focus, .navbar-toggle:hover, .navbar-toggle:active {background: none !important;}
-.navbar-toggle .icon-bar { height: 4px; background-color: $brand_main_color !important;}
-.navbar-toggle:hover .icon-bar { background-color: $brand_main_color !important;}
+.navbar-default .navbar-toggle:focus, .navbar-toggle:hover, .navbar-toggle:active {background-color: transparent;}
+.navbar-default .navbar-toggle .icon-bar { height: 4px; background-color: $brand_main_color !important;}
+.navbar-default .navbar-toggle:hover .icon-bar { background-color: $brand_main_color !important;}
 
 .navbar-header {
   color: $main_menu_links_color;
   background-color: $main_menu_background_color;
 }
-.navbar-nav > li > a > .fa { padding-right: .3em; }
+
+.navbar-nav > li > a > .fa {
+  padding-right: .3em;
+  width: 18px;
+}
 .user a.user span {margin-left: 4px;}
 .tooltip {}
 .user + .tooltip > .tooltip-inner {display: none;}
@@ -535,6 +539,15 @@ a.multi:hover { text-decoration: none; cursor: pointer;}
 .main-menu__link { 
   display: block; padding: 1em; text-decoration: none !important;
   color: $main_menu_links_color; 
+}
+.main-menu_dropdown .main-menu_menu .main-menu__item a.main-menu__link {
+  color: $main_menu_dropdown_links;
+  background-color: $main_menu_dropdown_bg;
+}
+.main-menu_dropdown .main-menu_menu .main-menu__item a.main-menu__link:hover,
+.main-menu_dropdown .main-menu_menu .main-menu__item a.main-menu__link:focus {
+  color: $main_menu_dropdown_links_hover;
+  background-color: $main_menu_dropdown_bg_hover;
 }
 
 @media(max-width: 767px) {
@@ -629,12 +642,12 @@ a.multi:hover { text-decoration: none; cursor: pointer;}
   .navbar-nav .open .dropdown-menu .dropdown-header,
   .navbar-nav .open .dropdown-menu > li > a { padding-top: 1.2em; padding-bottom: 1.2em; }
   .navbar-default .navbar-nav > li > a {
-    padding-top: 1.2em; padding-bottom: 1.2em; color: $main_menu_links_color;
-    background-color: $body_background_color;
+    padding-top: 1.2em; padding-bottom: 1.2em; color: $main_menu_dropdown_links;
+    background-color: $main_menu_dropdown_bg;
   }
   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: $main_menu_links_color_hover;
-    background-color: $body_background_color;
+    color: $main_menu_dropdown_links_hover;
+    background-color: $main_menu_dropdown_bg_hover;
   }
   .topnav .navbar-nav > li { margin-left: -15px;  margin-right: -15px; }
   .main-nav .navbar-nav > li { margin-left: -15px; margin-right: -15px; }
