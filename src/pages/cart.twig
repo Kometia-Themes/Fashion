@@ -48,15 +48,14 @@
             <p>{{ item.product.excerpt | raw }}</p>
           </td>
           <td>
-            <form action="/carrito/actualizar" method="post">
+            <form name="updateQty" action="/carrito/actualizar" method="post">
               <input type="hidden" name="_method" value="patch">
               <input type="hidden" name="id" value="{{ item.id }}">
-              <select class="cart__resume-table__product-quantity" name="quantity">
+              <select class="cart__resume-table__product-quantity updateQty" name="quantity">
                 {% for qty in 1..5 %}
                 <option value="{{ qty }}"{{ qty == item.quantity ? ' selected="selected"' : null }}>{{ qty }}</option>
                 {% endfor %}
               </select>
-              <button class="btn btn-link" type="submit"><i class="fa fa-refresh" aria-hidden="true"></i></span></button>
             </form>
           </td>
           <td class="cart__resume-table__product-amount">
@@ -100,4 +99,18 @@
 </div>
 {% endif %}
 </div>
+{% endblock %}
+
+{% block body_js %}
+{{ parent() }}
+  <script type="text/javascript">
+  $(function () {
+    $('.updateQty').change(function() {
+      this.form.submit();
+    });
+    $('form').submit(function(){
+      $(this).find(':submit').prop('disabled', true);
+    });
+  });
+  </script>
 {% endblock %}
