@@ -1,4 +1,5 @@
-{% include '_breadcrumb.twig' with { level: 'Productos', sublevel: product.name, variant: 'product' } %}
+{% include '_breadcrumb.twig' with { breadcrumb_type: 'product', title: 'Productos', blog_url: '', subtitle: product.name | title } %}
+
 <div class="product-single">
   <div class="container margin-top">
     <div class="row">

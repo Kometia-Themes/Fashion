@@ -1,13 +1,55 @@
+{% set breadcrumb_type = breadcrumb_type %}
+{% set title = title %}
+{% set blog_url = blog_url %}
+{% set subtitle = subtitle %}
+{% set filter = filter %}
+
 <div class="nav-breadcrumb">
-	<div class="container margin-bottom">
+	<div class="container">
 		<ul class="breadcrumb">
 		  <li class="breadcrumb__link breadcrub--inactive"><a href="/">Inicio</a></li>
-		  {% if sublevel is empty %}
-		  <li class="breadcrumb__link breadcrub--active">{{ level }}</li>
-		  {% else %}
-		  <li class="breadcrumb__link breadcrub--inactive"><a href="/productos">{{ level }}</a></li>
-		  <li class="breadcrumb__link breadcrub--active">{{ sublevel }}</li>
+		  {% if breadcrumb_type == 'post' %}
+		  <li class="breadcrumb__link breadcrub--active"><a href="/blogs/{{ blog_url |lower }}">{{ title }}</a></li>
+		  <li class="breadcrumb__link breadcrub--inactive">{{ subtitle }}</li>
+		  {% elseif breadcrumb_type == 'blog' %}
+		  <li class="breadcrumb__link breadcrub--inactive">Blogs</li>
+		  <li class="breadcrumb__link breadcrub--active"><a href="/blogs/{{ blog_url |lower }}">{{ title }}</a></li>
+		  {% elseif breadcrumb_type == 'product' %}
+		  <li class="breadcrumb__link breadcrub--inactive"><a href="/productos">{{ title }}</a></li>
+		  <li class="breadcrumb__link breadcrub--active">{{ subtitle }}</li>
+		  {% elseif breadcrumb_type == 'products' %}
+		  <li class="breadcrumb__link breadcrub--inactive"><a href="/productos">{{ title }}</a></li>
 		  {% endif %}
 		</ul>
+    {% if filter %}
+    <form class="filters" role="filters">
+      <ul class="breadcrumb-filters">
+      <li>
+        <select name="filter_alph" class="form-control">
+          <option value="">Nombre</option>
+          <option value="a-z">A-Z</option>
+          <option value="z-a">Z-A</option>
+        </select>
+      </li>
+      <li>
+        <select name="filter_date" id="filter_type" class="form-control">
+            <option value="">Creación</option>
+            <option value="date">Nuevos - viejos</option>
+            <option value="popularity">Viejos - nuevos </option>
+        </select>
+      </li>
+      <li>
+        <select name="filter_price" id="filter_type" class="form-control">
+            <option value="">Precio</option>
+            <option value="price[min]=400">Menor - mayor</option>
+            <option value="price[min]=400">Mayor - menor</option>
+        </select>
+      </li>
+      <li>
+        <button class="btn btn-default filters__btn" type="submit">Filtrar</button>
+      </li>
+      </ul>
+    </form>
+    {% endif %}
 	</div>
 </div>

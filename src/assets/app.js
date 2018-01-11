@@ -55,11 +55,6 @@ $(function() {
       $('.symmetrical').css({'height' : 'auto'});
     }
   }
-  var setFooterHeight = function() {
-    var newHeight = $('.footer > .container').outerHeight() + $('.footer > .info').outerHeight();
-    $('.footer').css({ height: newHeight });
-    $('body').css({ 'margin-bottom': newHeight + 40 });
-  }
   // Set product heights
   var getProductHeight = function() {
     var type1 = $('.image_square');
@@ -131,10 +126,9 @@ $(function() {
     }
     var enableClickOnProductCard = function() {
       $('div.product-card__image').on('click', function() {
-                                                            var _url = $(this).data("product-card-url");
-                                                            console.log(_url, this);
-                                                            window.location= _url;
-                                                          });
+        var _url = $(this).data("product-card-url");
+        window.location= _url;
+      });
     }
     enableClickOnProductCard();
   }
@@ -164,6 +158,5 @@ $(function() {
   win.on("load resize",function(e){
     // Load when window is loaded or resize
     alignHeights();
-    setFooterHeight();
   });
 });

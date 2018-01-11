@@ -1,0 +1,59 @@
+.navbar.navbar-filters {
+  .navbar-form {
+    background-color: transparent;
+    margin-top: 0;
+    text-align: right;
+  }
+  .form-group {
+    background-color: transparent;
+  }
+  .filter_alph {
+    background-color: transparent;
+  }
+  .filter_date {
+    background-color: transparent;
+  }
+  .filter_price {
+    background-color: transparent;
+  }
+  button.btn {
+    background-color: transparent;
+  }
+}
+
+// Filter inside breadcrumb
+.nav-breadcrumb {
+  form.filters {
+    display: inline;
+    float: right;
+    padding: 6px 0;
+    line-height: 1;
+    margin: 0;
+    ul.breadcrumb-filters {
+      display: inline-block;
+      list-style: none;
+      margin: 0;
+    }
+    ul.breadcrumb-filters li {
+      float: left;
+      @media(min-width: 768px) {
+        margin-left: 12px;
+      }
+    }
+    select.form-control {
+    }
+    .filters__btn,
+    .filters__btn:hover,
+    .filters__btn:focus {
+      background: transparent;
+    }
+    .filters__btn {
+    }
+    .filter_alph,
+    .filter_date,
+    .filter_price {}
+    .filter_alph {}
+    .filter_date {}
+    .filter_price {}
+  }
+}

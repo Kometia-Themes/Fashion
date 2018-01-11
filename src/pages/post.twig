@@ -1,14 +1,14 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
-{% include '_breadcrumb.twig' with { level: blog.title , sublevel: post.title } %}
+{% include '_breadcrumb.twig' with { breadcrumb_type: 'post', title: 'Blogs', blog_url: blog.permalink, subtitle: post.title | title } %}
 <div class="container margin-bottom margin-top">
   <div class="row post">
   <div class="col-sm-9">
     {% if post.image_url is not null %}
     <div class="post__image" style="background-image:url('{{ post.image_url }}');"></div>
     {% endif %}
-    <h1 class="post__title title--italic">{{ post.title }}</h1>
+    <h1 class="post__title">{{ post.title }}</h1>
     <p><em>{{ post.published_at | datetime }}</em></p>
     <p class="post__content">{{ post.content }}</p>
 

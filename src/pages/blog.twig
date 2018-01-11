@@ -1,7 +1,8 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
-{% include '_breadcrumb.twig' with { level: blog.title , sublevel: '' } %}
+{% include '_breadcrumb.twig' with { breadcrumb_type: 'blog', title: blog.title, blog_url: blog.permalink } %}
+
 <div class="container margin-top margin-bottom">
   <div class="row">
     <div class="col-sm-12 section__title">
