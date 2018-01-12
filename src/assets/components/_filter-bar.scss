@@ -26,13 +26,14 @@
   form.filters {
     display: inline;
     float: right;
-    padding: 6px 0;
-    line-height: 1;
+    line-height: 0;
     margin: 0;
+    padding: 8px 0 0px;
     ul.breadcrumb-filters {
       display: inline-block;
       list-style: none;
       margin: 0;
+      padding: 0;
     }
     ul.breadcrumb-filters li {
       float: left;
@@ -41,14 +42,14 @@
       }
     }
     select.form-control {
+      height: 31px;
     }
     .filters__btn,
     .filters__btn:hover,
     .filters__btn:focus {
       background: transparent;
     }
-    .filters__btn {
-    }
+    .filters__btn {}
     .filter_alph,
     .filter_date,
     .filter_price {}

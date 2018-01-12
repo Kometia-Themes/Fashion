@@ -178,7 +178,16 @@
       "share_facebook": true,
       "share_twitter": true,
       "share_pinterest": true,
-      "share_google": true
+      "share_google": true,
+      "orderby_name": true,
+      "orderby_created": true,
+      "orderby_price": true,
+      "orderby_name_ascending_text": "A-Z",
+      "orderby_name_descending_text": "Z-A",
+      "orderby_created_ascending_text": "Nuevo a Viejo",
+      "orderby_created_descending_text": "Viejo a nuevo",
+      "orderby_price_ascending_text": "Menor a mayor",
+      "orderby_price_descending_text": "Mayor a menor"
     }
   }
 }
