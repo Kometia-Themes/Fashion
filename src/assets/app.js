@@ -135,7 +135,8 @@ $(function() {
   var getUrlParameter = function() {
     // TODO get orderby params
     var _url = decodeURIComponent(window.location.search.substring(1));
-    var _el = $("form.filters ul.breadcrumb-filters li select option");
+    console.log(_url);
+    var _el = $("form.filters select option");
     if (_url.length) {
       var _param = _url.split("=")[1];
       _el.each(function(){
@@ -146,18 +147,31 @@ $(function() {
         }
       });
     }
+    $("form.filters").selectpicker("refresh");
   }
+
   var filterBarExist = function() {
     return $('form.filters').length > 0 ? true : false;
   }
   var updateFilterOption = function() {
-    var _existfilterbar = filterBarExist();
-    if (_existfilterbar) {
+    var _existFilterBar = filterBarExist();
+    if (_existFilterBar) {
       getUrlParameter();
     }
   }
   updateFilterOption();
 
+  $(".sidebar__content .filter_order").change(
+    function() {
+      this.form.submit();
+    }
+  );
+
+  $(".filter_order").change(
+    function() {
+      this.form.submit();
+    }
+  );
 
   win.on('load', function() {
     // Load when windows is full loaded

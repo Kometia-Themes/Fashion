@@ -78,7 +78,36 @@
 
 <div class="cart-totals">
   <div class="row">
-    <div class="col-sm-12 text-right">
+    <div class="col-sm-12 col-md-6">
+      <form action="/carrito" method="post">
+        {% if settings.enabled_gift_option %}
+          <div class="cartgift__form">
+            <div class="checkbox">
+              <label><input class="cartgift--checkbox" type="checkbox" name="is_gift" value="1" {{ cart.is_gift ? "checked='checked'" : '' }}>{{ settings.gift_title_message }}</label>
+            </div>
+            <div class="cartgift__form--content">
+              <div class="form-group">
+                <label class="sr-only" for="gift_message">{{ settings.gift_title_message }}</label>
+                <textarea type="text" class="form-control" name="gift_message" value="{{ cart.gift_message }}" maxlength="150">{{ cart.gift_message }}</textarea>
+              </div>
+              <button type="submit" class="btn btn-xs btn-primary cartgift__btn">{{ settings.gift_btn_message }}</button>
+            </div>
+          </div>
+        {% endif %}
+        {% if settings.enabled_customer_note_option %}
+        <hr>
+          <p>{{ settings.customer_title_note }}</p>
+          <div class="cartnote__form">
+            <div class="form-group">
+              <label class="sr-only" for="note">{{ settings.customer_title_note }}</label>
+              <textarea class="form-control cartnote__note" type="textarea" name="note" value="{{ cart.customer_note }}" maxlength="500">{{ cart.customer_note }}</textarea>
+            </div>
+            <button type="submit" class="btn btn-xs btn-primary cartnote__btn">{{ settings.customer_btn_note_text }}</button>
+          </div>
+        {% endif %}
+      </form>
+    </div>
+    <div class="col-sm-12 col-md-6 text-right">
       <h3 class="cart-total-row__title">TOTAL {{ cart.total_price | money('symbol', 'code') }}</h3>
       {% if store.is_tax_included %}
       <p>IVA Incluído</p>

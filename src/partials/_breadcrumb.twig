@@ -7,7 +7,7 @@
 <div class="nav-breadcrumb">
 	<div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-4 col-md-6">
+      <div class="col-xs-6 col-sm-4 col-md-6">
         <ul class="breadcrumb">
           <li class="breadcrumb__link breadcrub--inactive"><a href="/">Inicio</a></li>
           {% if breadcrumb_type == 'post' %}
@@ -24,29 +24,26 @@
           {% endif %}
         </ul>
       </div>
-      <div class="col-xs-12 col-sm-8 col-md-6 hidden-xs">
+      <div class="col-xs-6 col-sm-8 col-md-6">
         {% if filter and (settings.orderby_name or settings.orderby_created or settings.orderby_price) %}
-        <form class="filters" role="filters">
+        <form name="filters" class="filters" role="filters">
           <ul class="breadcrumb-filters">
           <li>
-            <select name="sort_by" id="sort_by" class="filter_order form-control" data-width="220px">
-              <option value="no-order" disabled>Ordenar por:</option>
+            <select name="sort_by" id="sort_by" class="filter_order selectpicker form-control" data-width="220px">
+              <option value="no-order" disabled selected>Ordenar</option>
               {% if settings.orderby_name %}
-                <option value="name-ascending" {% if settings.orderby_name %}selected{% endif %}>{{ settings.orderby_name_ascending_text }}</option>
-                <option value="name-descending">{{ settings.orderby_name_descending_text }}</option>
+              <option value="name-ascending">{{ settings.orderby_name_ascending_text }}</option>
+              <option value="name-descending">{{ settings.orderby_name_descending_text }}</option>
               {% endif %}
               {% if settings.orderby_created %}
-                <option value="created-ascending" {% if settings.orderby_name == false and settings.orderby_price == false %}selected{% endif %}>{{ settings.orderby_created_ascending_text }}</option>
-                <option value="created-descending">{{ settings.orderby_created_descending_text }}</option>
+              <option value="created-ascending">{{ settings.orderby_created_ascending_text }}</option>
+              <option value="created-descending">{{ settings.orderby_created_descending_text }}</option>
               {% endif %}
               {% if settings.orderby_price %}
-                <option value="price-ascending" {% if settings.orderby_name == false and settings.orderby_created == false %}selected{% endif %}>{{ settings.orderby_price_ascending_text }}</option>
-                <option value="price-descending">{{ settings.orderby_price_descending_text }}</option>
+              <option value="price-ascending">{{ settings.orderby_price_ascending_text }}</option>
+              <option value="price-descending">{{ settings.orderby_price_descending_text }}</option>
               {% endif %}
             </select>
-          </li>
-          <li>
-            <button class="btn btn-default btn-sm filters__btn" type="submit">Ordenar</button>
           </li>
           </ul>
         </form>

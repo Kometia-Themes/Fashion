@@ -518,7 +518,8 @@
                   "group": "Sans-serif"
                 },
                 {
-                  "value": "'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Lucida, Helvetica, Arial, sans-serif",
+                  "value":
+                    "'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Lucida, Helvetica, Arial, sans-serif",
                   "label": "Lucida Grande",
                   "group": "Sans-serif"
                 },
@@ -543,7 +544,8 @@
                   "group": "Serif"
                 },
                 {
-                  "value": "Palatino, 'Palatino Linotype', 'Book Antiqua', serif",
+                  "value":
+                    "Palatino, 'Palatino Linotype', 'Book Antiqua', serif",
                   "label": "Palatino",
                   "group": "Serif"
                 },
@@ -558,7 +560,8 @@
                   "group": "Monospace"
                 },
                 {
-                  "value": "Monaco, 'Lucida Console', 'DejaVu Sans Mono', monospace",
+                  "value":
+                    "Monaco, 'Lucida Console', 'DejaVu Sans Mono', monospace",
                   "label": "Monaco/Lucida Console",
                   "group": "Monospace"
                 }
@@ -603,7 +606,8 @@
               "id": "body_font_weight",
               "label": "Peso",
               "default": "300",
-              "info": "Comprueba que existe el peso seleccionado en https://fonts.google.com.",
+              "info":
+                "Comprueba que existe el peso seleccionado en https://fonts.google.com.",
               "options": [
                 {
                   "value": "",
@@ -889,7 +893,8 @@
                   "group": "Sans-serif"
                 },
                 {
-                  "value": "'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Lucida, Helvetica, Arial, sans-serif",
+                  "value":
+                    "'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Lucida, Helvetica, Arial, sans-serif",
                   "label": "Lucida Grande",
                   "group": "Sans-serif"
                 },
@@ -914,7 +919,8 @@
                   "group": "Serif"
                 },
                 {
-                  "value": "Palatino, 'Palatino Linotype', 'Book Antiqua', serif",
+                  "value":
+                    "Palatino, 'Palatino Linotype', 'Book Antiqua', serif",
                   "label": "Palatino",
                   "group": "Serif"
                 },
@@ -929,7 +935,8 @@
                   "group": "Monospace"
                 },
                 {
-                  "value": "Monaco, 'Lucida Console', 'DejaVu Sans Mono', monospace",
+                  "value":
+                    "Monaco, 'Lucida Console', 'DejaVu Sans Mono', monospace",
                   "label": "Monaco/Lucida Console",
                   "group": "Monospace"
                 }
@@ -974,7 +981,8 @@
               "id": "heading_font_weight",
               "label": "Peso",
               "default": "300",
-              "info": "Comprueba que existe el peso seleccionado en https://fonts.google.com.",
+              "info":
+                "Comprueba que existe el peso seleccionado en https://fonts.google.com.",
               "options": [
                 {
                   "value": "",
@@ -1088,7 +1096,8 @@
               "type": "text",
               "id": "footer_contact_data",
               "label": "Contacto y/o ubicación",
-              "default": "CALLE 000, COLONIA, DELEGACION/MUNICIPIO, MÉXICO, ESTADO, C.P. 00000 TELÉFONO (+52) 000 000000 - (+52) 000 000000 INFO@MIEMPRESA.COM"
+              "default":
+                "CALLE 000, COLONIA, DELEGACION/MUNICIPIO, MÉXICO, ESTADO, C.P. 00000 TELÉFONO (+52) 000 000000 - (+52) 000 000000 INFO@MIEMPRESA.COM"
             },
             {
               "type": "checkbox",
@@ -1105,7 +1114,8 @@
               "type": "text",
               "id": "footer_mailing_list_text",
               "label": "Texto newsletter",
-              "default": "Entérate antes que nadie de las mejores promociones, nuevos estilos, tendencias del momento y mucho más…"
+              "default":
+                "Entérate antes que nadie de las mejores promociones, nuevos estilos, tendencias del momento y mucho más…"
             },
             {
               "type": "checkbox",
@@ -1265,7 +1275,8 @@
           "settings": [
             {
               "type": "paragraph",
-              "content": "Elige las secciones de tu página de inicio y su posición."
+              "content":
+                "Elige las secciones de tu página de inicio y su posición."
             },
             {
               "type": "select",
@@ -1797,7 +1808,8 @@
               "id": "featured_products_limit",
               "label": "Límite de Productos a Mostrar",
               "default": "8",
-              "info": "Para mostrar todos los productos de esta colección deja vacío este campo"
+              "info":
+                "Para mostrar todos los productos de esta colección deja vacío este campo"
             }
           ]
         }
@@ -1926,7 +1938,8 @@
           "settings": [
             {
               "type": "paragraph",
-              "content": "Esta configuración requiere de conocimientos avanzados, cualquier duda contacta al equipo de Shoperti"
+              "content":
+                "Esta configuración requiere de conocimientos avanzados, cualquier duda contacta al equipo de Shoperti"
             },
             {
               "type": "text",
@@ -1984,6 +1997,7 @@
       "icon": "product-page",
       "sections": [
         {
+          "header": "Detalles",
           "settings": [
             {
               "type": "checkbox",
@@ -1996,7 +2010,12 @@
               "id": "show_vendor_name",
               "label": "Mostrar marca del producto",
               "default": true
-            },
+            }
+          ]
+        },
+        {
+          "header": "Miniaturas",
+          "settings": [
             {
               "type": "select",
               "id": "product_thumbnail_form",
@@ -2016,6 +2035,65 @@
                   "label": "Cuadrada"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "header": "Ordenar",
+          "settings": [
+            {
+              "type": "checkbox",
+              "id": "orderby_name",
+              "label": "Habilitar ordenar por nombre",
+              "default": true
+            },
+            {
+              "type": "text",
+              "id": "orderby_name_ascending_text",
+              "label": "Texto del botón",
+              "default": "Nombre: A-Z"
+            },
+            {
+              "type": "text",
+              "id": "orderby_name_descending_text",
+              "label": "Texto del botón",
+              "default": "Nombre: Z-A"
+            },
+            {
+              "type": "checkbox",
+              "id": "orderby_created",
+              "label": "Habilitar ordenar por fecha de creación",
+              "default": true
+            },
+            {
+              "type": "text",
+              "id": "orderby_created_ascending_text",
+              "label": "Texto del botón",
+              "default": "Creación: Nuevo a Viejo"
+            },
+            {
+              "type": "text",
+              "id": "orderby_created_descending_text",
+              "label": "Texto del botón",
+              "default": "Creación: Viejo a nuevo"
+            },
+            {
+              "type": "checkbox",
+              "id": "orderby_price",
+              "label": "Habilitar ordenar por precio",
+              "default": true
+            },
+            {
+              "type": "text",
+              "id": "orderby_price_ascending_text",
+              "label": "Texto del botón",
+              "default": "Precio: menor a mayor"
+            },
+            {
+              "type": "text",
+              "id": "orderby_price_descending_text",
+              "label": "Texto del botón",
+              "default": "Precio: mayor a menor"
             }
           ]
         }
@@ -2048,6 +2126,52 @@
               "id": "cart_btn_more_text",
               "label": "Texto de boton comprar más",
               "default": "Comprar más"
+            }
+          ]
+        },
+        {
+          "header": "Es regalo",
+          "settings": [
+            {
+              "type": "checkbox",
+              "id": "enabled_gift_option",
+              "label": "Mostrar opciones para regalo.",
+              "default": false
+            },
+            {
+              "type": "text",
+              "id": "gift_title_message",
+              "label": "Título",
+              "default": "Esto es un regalo. Incluir el siguiente mensaje (150 caracteres máximo)."
+            },
+            {
+              "type": "text",
+              "id": "gift_btn_message",
+              "label": "Texto del botón",
+              "default": "Agregar mensaje"
+            }
+          ]
+        },
+        {
+          "header": "Nota del cliente",
+          "settings": [
+            {
+              "type": "checkbox",
+              "id": "enabled_customer_note_option",
+              "label": "Mostrar campo nota del cliente.",
+              "default": true
+            },
+            {
+              "type": "text",
+              "id": "customer_title_note",
+              "label": "Título",
+              "default": "Agrega alguna nota o comentario al vendedor:"
+            },
+            {
+              "type": "text",
+              "id": "customer_btn_note_text",
+              "label": "Texto del botón",
+              "default": "Agregar nota"
             }
           ]
         }

@@ -35,12 +35,6 @@
       margin: 0;
       padding: 0;
     }
-    ul.breadcrumb-filters li {
-      float: left;
-      @media(min-width: 768px) {
-        margin-left: 12px;
-      }
-    }
     select.form-control {
       height: 31px;
     }
@@ -56,5 +50,18 @@
     .filter_alph {}
     .filter_date {}
     .filter_price {}
+  }
+}
+
+form.filters {
+  text-align: right;
+}
+
+.sidebar__content {
+  form.filters {
+    text-align: left;
+    div.btn-group.bootstrap-select.filter_order.form-control {
+      margin-bottom: 8px;
+    }
   }
 }

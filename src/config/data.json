@@ -187,7 +187,13 @@
       "orderby_created_ascending_text": "Nuevo a Viejo",
       "orderby_created_descending_text": "Viejo a nuevo",
       "orderby_price_ascending_text": "Menor a mayor",
-      "orderby_price_descending_text": "Mayor a menor"
+      "orderby_price_descending_text": "Mayor a menor",
+      "enabled_gift_option": false,
+      "gift_title_message": "Esto es un regalo",
+      "gift_btn_message": "Guardar",
+      "enabled_customer_note_option": true,
+      "customer_title_note": "Nota a la compra",
+      "customer_btn_note_text": "Agregar nota"
     }
   }
 }
