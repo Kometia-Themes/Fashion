@@ -129,7 +129,7 @@ html {
 
 .newsletter-foo__button {
   color: $footer_links_color;
-  background-color: $footer_links_color_hover;
+  background-color: transparent;
   border: 1px solid $footer_body_text_color;
   border-radius: 0;
   height: 100%;
@@ -143,7 +143,7 @@ html {
 
 .newsletter-foo__button:hover {
   color: $footer_links_color_hover;
-  background-color: $footer_links_color;
+  background-color: transparent;
   border-color: $footer_links_color;
   border: 1px solid $footer_links_color;
 }

@@ -1837,45 +1837,7 @@
               "type": "color",
               "id": "main_banner_background_color",
               "label": "Color de fondo",
-              "default": "#E7E7E7"
-            },
-            {
-              "type": "text",
-              "id": "main_banner_title",
-              "label": "Título"
-            },
-            {
-              "type": "color",
-              "id": "main_banner_title_color",
-              "label": "Color del título",
-              "default": "#222222"
-            },
-            {
-              "type": "text",
-              "id": "main_banner_description",
-              "label": "Descripción"
-            },
-            {
-              "type": "select",
-              "id": "main_banner_description_align",
-              "label": "Posición del contenido",
-              "default": "left",
-              "options": [
-                {
-                  "value": "left",
-                  "label": "Izquierda"
-                },
-                {
-                  "value": "right",
-                  "label": "Derecha"
-                }
-              ]
-            },
-            {
-              "type": "color",
-              "id": "main_banner_description_color",
-              "label": "Color de la descripción",
-              "default": "#222222"
+              "default": "#ffffff"
             },
             {
               "type": "checkbox",
@@ -1884,14 +1846,8 @@
             },
             {
               "type": "text",
-              "id": "main_banner_btn_text",
-              "label": "Texto del botón",
-              "default": "Ver más"
-            },
-            {
-              "type": "text",
               "id": "main_banner_btn_url",
-              "label": "Vínculo del botón"
+              "label": "Vínculo del banner"
             }
           ]
         }

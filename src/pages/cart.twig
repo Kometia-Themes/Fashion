@@ -22,17 +22,15 @@
     <table class="table table-responsive cart__resume-table">
       <thead>
         <tr>
-          <th class="hidden-xs"></th>
-          <th class="table__product-description">Producto</th>
+          <th class="table__product-description" colspan="2">Producto</th>
           <th>Cantidad</th>
-          <th class="text-right">Precio</th>
-          <th></th>
+          <th class="text-right" colspan="2">Precio</th>
         </tr>
       </thead>
       <tbody>
         {% for item in cart.items %}
         <tr>
-          <td class="hidden-xs" align="center">
+          <td class="cart__resume-table__product-image" align="center">
             {% if item.sku.image_url is not empty %}
             <a href="/productos/{{ item.product.permalink }}{% if item.sku.permalink != 'default' %}/{{ item.sku.permalink }}{% endif %}"><img class="img-responsive" src="{{ item.sku.image_url }}&w=130" width="130" alt="{{ item.product.name }}"></a>
             {% elseif item.product.image_url is not empty %}
@@ -45,7 +43,6 @@
             <a class="cart__resume-table__product-name" href="/productos/{{ item.product.permalink }}{% if item.sku.permalink != 'default' %}/{{ item.sku.permalink }}{% endif %}">
               {{ item.product.name }}{% if item.product.modifiers.count > 0 %} - {{ item.sku.name }}{% endif %}
             </a>
-            <p>{{ item.product.excerpt | raw }}</p>
           </td>
           <td>
             <form name="updateQty" action="/carrito/actualizar" method="post">
