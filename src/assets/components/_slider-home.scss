@@ -1,0 +1,30 @@
+.slider-home {
+  .slick-slide img {
+    display: inline-block;
+    width: 100%;
+    max-width: 1480px;
+  }
+  .slide_content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .slide1,
+  .slide2,
+  .slide3 {
+    height: 100%;
+    width: 100%;
+  }
+  .slide_1 {
+    background-color: $slide_1_bg_color;
+  }
+  .slide_2 {
+    background-color: $slide_2_bg_color;
+  }
+  .slide_3 {
+    background-color: $slide_3_bg_color;
+  }
+}

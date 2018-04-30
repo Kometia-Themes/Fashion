@@ -22,7 +22,7 @@ Estas tareas toman el código fuente del tema y empaquetan en un zip para ser in
 
 ### Instalando Node
 
-Es indispensable contar con NodeJs instalado. Para saber si cuenta con él, vaya a su terminal y escriba <code>node -v</code> y podrá ver algo así <code>v6.9.1</code> si ya lo tiene instalado. En caso contrario vaya a la página de [Node] (https://nodejs.org/download/) 
+Es indispensable contar con NodeJs instalado. Para saber si cuenta con él, vaya a su terminal y escriba <code>node -v</code> y podrá ver algo así <code>v6.9.1</code> si ya lo tiene instalado. En caso contrario vaya a la página de [Node] (https://nodejs.org/download/)
 
 1. Navegue hasta la raíz de este proyecto de tema descargado
 2. Ejecute `npm install`.
@@ -43,7 +43,7 @@ npm run serve
 
 ```npm run start``` servirá para publicar tus archivos html, estilos y scripts en la carpeta **public** y así construir tu sitio sin funcionalidades de Twig. Incluye un servidor http para ver el sitio usando la ruta http://localhost:9000
 
-```npm run start``` generará una carpeta 'theme' dentro de 'dist' que te servirá para probar tu plantilla en ambiente local, los archivos serán ```.twig``` 
+```npm run start``` generará una carpeta 'theme' dentro de 'dist' que te servirá para probar tu plantilla en ambiente local, los archivos serán ```.twig```
 
 Estas tareas toman el código fuente del tema y empaquetan en un zip para ser instalado.
 
@@ -109,7 +109,7 @@ theme
 │   │   ├── blur-password.jpg
 │   │   ├── favicon.ico
 │   │   └── styles.css.twig
-│   │   
+│   │
 │   ├── config
 │   │   ├── data.json
 │   │   └── schema.json

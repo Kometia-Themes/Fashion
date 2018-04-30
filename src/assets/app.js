@@ -30,11 +30,13 @@ function() {
   }
   // Init slick slider
   var initSlider = function() {
-    $('.slider').slick({
+    $(".slider").slick({
       autoplay: true,
       autoplaySpeed: 4000,
-      prevArrow: $('.arrow-element.left-arrow'),
-      nextArrow: $('.arrow-element.right-arrow')
+      slidesToShow: 1,
+      centerMode: false,
+      prevArrow: $(".arrow-element.left-arrow"),
+      nextArrow: $(".arrow-element.right-arrow")
     });
   }
   initSlider();
@@ -301,7 +303,6 @@ function() {
       error: function(data, textStatus, errorThrown) {
         console.log('message=:'+data+', text status=:'+textStatus+', error thrown:='+errorThrown)
       }})
-    .success(function(){})
     .done(function(data){});
   }
 

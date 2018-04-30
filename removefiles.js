@@ -15,7 +15,8 @@ removeDir = function(dirPath, removeSelf) {
     return;
   }
   if (files.length > 0) {
-    for (var i = 0; i < files.length; i++) {
+    var _files = files.length;
+    for (var i = 0; i < _files; i++) {
       var filePath = dirPath + '/' + files[i];
       if (fs.statSync(filePath).isFile() && files[i].split('.').pop() != 'zip') {
         fs.unlinkSync(filePath);
