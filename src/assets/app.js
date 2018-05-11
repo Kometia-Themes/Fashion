@@ -35,6 +35,9 @@ function() {
       autoplaySpeed: 4000,
       slidesToShow: 1,
       centerMode: false,
+      fade: true,
+      cssEase: 'linear',
+      arrows: false,
       prevArrow: $(".arrow-element.left-arrow"),
       nextArrow: $(".arrow-element.right-arrow")
     });

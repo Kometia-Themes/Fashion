@@ -4,11 +4,25 @@
     {% set slideType = '' %}
     {% set slide = 'slide_'~i %}
     {% if settings.slide_bg_cover_type %}
-    {% set slideType = 'cover-slider' %}
+    {% set slideType = ' cover-slider' %}
     {% endif %}
-    {% if settings[slide] %}
+    {% if settings[slide] and settings['slide_'~i~'_image_desktop'] is not empty %}
       <div class="slide {{ slide }}">
-        <img src="{{ settings['slide_'~i~'_img_background'] }}&w=1400" alt="">
+        {% if settings.slider_has_overlay %}
+        <div class="slider_overlay"></div>
+        {% endif %}
+        {% if settings['slide_'~i~'_btn'] and settings['slide_'~i~'_btn_text'] is empty and settings['slide_'~i~'_btn_buy_link'] is not empty %}
+        <a href="{{ settings['slide_'~i~'_btn_buy_link'] }}">
+        {% endif %}
+        {% if settings.mobile_slide and settings['slide_'~i~'_image_mobile'] is not empty %}
+          <img class="visible-xs" src="{{ settings['slide_'~i~'_image_mobile'] }}&w=580&h=620&fit=crop" alt="{{ settings['slide_'~i~'_title'] }}">
+          <img class="hidden-xs{% if settings.slide_bg_cover_type %} full-size{% endif %}" src="{{ settings['slide_'~i~'_image_desktop'] }}&w=1600&h=660" alt="{{ settings['slide_'~i~'_title'] }}">
+        {% else %}
+          <img {% if settings.slide_bg_cover_type %}class="full-size" {% endif %}src="{{ settings['slide_'~i~'_image_desktop'] }}&w=1600&h=660" alt="{{ settings['slide_'~i~'_title'] }}">
+        {% endif %}
+        {% if settings['slide_'~i~'_btn'] and settings['slide_'~i~'_btn_text'] is empty and settings['slide_'~i~'_btn_buy_link'] is not empty %}
+        </a>
+        {% endif %}
         <div class="slide_content">
           <div class="arrow-container-left">
             <a class="arrow-element left-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
@@ -16,30 +30,27 @@
           <div class="arrow-container-right">
             <a class="arrow-element right-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
           </div>
+          {% if settings['slide_'~i~'_title'] is not empty or settings['slide_'~i~'_description'] is not empty %}
           <div class="container-fluid">
-            {% if settings.slider_has_overlay %}
-            <div class="slider_overlay"></div>
-            {% endif %}
             <div class="row">
-              <div class="col-sm-12 slide{{i}}">
+              <div class="col-sm-12 slide{{ i }}">
                 <div class="slider_content_outher">
                   <div class="slider_content_inner">
                     {% if settings['slide_'~i~'_title'] is not empty %}
-                    <h1 class="title title__big">{{ settings['slide_'~i~'_title'] }}</h1>
+                    <h1 class="title title__big{% if settings['slider_text_has_overlay'] %} shadow {% endif %}">{{ settings['slide_'~i~'_title'] }}</h1>
                     {% endif %}
-                    {% if settings['slide_'~i~'_title'] is not empty %}
-                    <h2 class="title title__medium title--uppercase">{{ settings['slide_'~i~'_description'] }}</h2>
+                    {% if settings['slide_'~i~'_description'] is not empty %}
+                    <h2 class="title title__medium title--uppercase{% if settings['slider_text_has_overlay'] %} shadow {% endif %}">{{ settings['slide_'~i~'_description'] }}</h2>
                     {% endif %}
                     {% if settings['slide_'~i~'_btn'] and settings['slide_'~i~'_btn_text'] is not empty and settings['slide_'~i~'_btn_buy_link'] is not empty %}
                       <a class="btn btn-base btn__slide {% if settings['slider_text_has_overlay'] %}btn__slide--shadow{% endif %}" href="{{ settings['slide_'~i~'_btn_buy_link'] }}">{{ settings['slide_'~i~'_btn_text'] }}</a>
-                    {% elseif settings['slide_'~i~'_btn'] and settings['slide_'~i~'_btn_text'] is empty and settings['slide_'~i~'_btn_buy_link'] is not empty %}
-                      <a class="slide_static_button" href="{{ settings['slide_'~i~'_btn_buy_link'] }}">{{ settings['slide_'~i~'_btn_text'] }}</a>
                     {% endif %}
                   </div> <!-- .slider_content_inner -->
                 </div> <!-- .slider_content_outher -->
               </div> <!-- .col-sm-12 slide{{i}} -->
             </div> <!-- .row -->
           </div> <!-- .container-fluid -->
+        {% endif %}
         </div>
       </div> <!-- .slide {{ slide }} -->
     {% endif %}

@@ -8,4 +8,7 @@ dist/.src/
 node_modules/
 public/
 src/vendor/
+dist/assets/
+dist/pages/
+
 

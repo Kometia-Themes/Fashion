@@ -833,6 +833,11 @@
                   "group": "Google Web Fonts"
                 },
                 {
+                  "value": "Google+Raleway",
+                  "label": "Raleway",
+                  "group": "Google Web Fonts"
+                },
+                {
                   "value": "Google+Roboto",
                   "label": "Roboto",
                   "group": "Web Fonts"
@@ -1516,9 +1521,15 @@
             },
             {
               "type": "image",
-              "id": "slide_1_img_background",
-              "label": "Imagen de fondo",
-              "info": "1180px de ancho recomendado"
+              "id": "slide_1_image_desktop",
+              "label": "Imagen",
+              "info": "1600px de ancho recomendado"
+            },
+            {
+              "type": "image",
+              "id": "slide_1_image_mobile",
+              "label": "Imagen para móviles",
+              "info": "Medida recomendada: 580px de ancho por 620px de alto"
             },
             {
               "type": "color",
@@ -1568,6 +1579,12 @@
               "id": "slide_1_btn_color",
               "label": "Color del botón",
               "default": "#FFFFFF"
+            },
+            {
+              "type": "color",
+              "id": "slide_1_btn_bg_color",
+              "label": "Color del botón",
+              "default": "#01A9DB"
             }
           ]
         },
@@ -1585,9 +1602,15 @@
             },
             {
               "type": "image",
-              "id": "slide_2_img_background",
-              "label": "Imagen de fondo",
-              "info": "1180px de ancho recomendado"
+              "id": "slide_2_image_desktop",
+              "label": "Imagen",
+              "info": "1600px de ancho recomendado"
+            },
+            {
+              "type": "image",
+              "id": "slide_2_image_mobile",
+              "label": "Imagen para móviles",
+              "info": "Medida recomendada: 580px de ancho por 620px de alto"
             },
             {
               "type": "color",
@@ -1637,6 +1660,12 @@
               "id": "slide_2_btn_color",
               "label": "Color del botón",
               "default": "#FFFFFF"
+            },
+            {
+              "type": "color",
+              "id": "slide_2_btn_bg_color",
+              "label": "Color de fondo del botón",
+              "default": "#01A9DB"
             }
           ]
         },
@@ -1654,9 +1683,15 @@
             },
             {
               "type": "image",
-              "id": "slide_3_img_background",
-              "label": "Imagen de fondo",
-              "info": "1180px de ancho recomendado"
+              "id": "slide_3_image_desktop",
+              "label": "Imagen",
+              "info": "1600px de ancho recomendado"
+            },
+            {
+              "type": "image",
+              "id": "slide_3_image_mobile",
+              "label": "Imagen para móviles",
+              "info": "Medida recomendada: 580px de ancho por 620px de alto"
             },
             {
               "type": "color",
@@ -1706,12 +1741,103 @@
               "id": "slide_3_btn_color",
               "label": "Color del botón",
               "default": "#FFFFFF"
+            },
+            {
+              "type": "color",
+              "id": "slide_3_btn_bg_color",
+              "label": "Color de fondo del botón",
+              "default": "#01A9DB"
+            }
+          ]
+        },
+        {
+          "header": "Slide 4",
+          "settings": [{
+              "type": "checkbox",
+              "id": "slide_4",
+              "label": "Mostrar Slider 4"
+            },
+            {
+              "type": "paragraph",
+              "content": "Slide 4"
+            },
+            {
+              "type": "image",
+              "id": "slide_4_image_desktop",
+              "label": "Imagen",
+              "info": "1600px de ancho recomendado"
+            },
+            {
+              "type": "image",
+              "id": "slide_4_image_mobile",
+              "label": "Imagen para móviles",
+              "info": "Medida recomendada: 580px de ancho por 620px de alto"
+            },
+            {
+              "type": "color",
+              "id": "slide_4_bg_color",
+              "label": "Color de fonto",
+              "default": "#FFFFFF"
+            },
+            {
+              "type": "text",
+              "id": "slide_4_title",
+              "label": "Título"
+            },
+            {
+              "type": "color",
+              "id": "slide_4_title_color",
+              "label": "Color del título",
+              "default": "#FFFFFF"
+            },
+            {
+              "type": "text",
+              "id": "slide_4_description",
+              "label": "Descripción"
+            },
+            {
+              "type": "color",
+              "id": "slide_4_description_color",
+              "label": "Color de la descripción",
+              "default": "#FFFFFF"
+            },
+            {
+              "type": "checkbox",
+              "id": "slide_4_btn",
+              "label": "Activar enlace o botón"
+            },
+            {
+              "type": "text",
+              "id": "slide_4_btn_text",
+              "label": "Texto del boton de acción"
+            },
+            {
+              "type": "text",
+              "id": "slide_4_btn_buy_link",
+              "label": "Enlace del botón o slide"
+            },
+            {
+              "type": "color",
+              "id": "slide_4_btn_color",
+              "label": "Color del botón",
+              "default": "#FFFFFF"
+            },
+            {
+              "type": "color",
+              "id": "slide_4_btn_bg_color",
+              "label": "Color de fondo del botón",
+              "default": "#01A9DB"
             }
           ]
         },
         {
           "header": "Extras",
           "settings": [
+            {
+              "type": "checkbox",
+              "id": "mobile_slide",
+              "label": "Imágenes para móviles"
+            },
             {
               "type": "checkbox",
               "id": "slide_bg_cover_type",
