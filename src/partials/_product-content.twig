@@ -61,6 +61,19 @@
                   {% endfor %}
                 </select>
               </div>
+              {% if settings.personalizable_enable %}
+              <div class="product__vars">
+                <h5 class="product__heading">Personalizar</h5>
+                <div class="personalizer">
+                  <label class="radio-inline">
+                    <input type="radio" name="inlinePersonalizer" id="inlineRadio1" value="false" checked="checked"> No
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlinePersonalizer" id="inlineRadio2" value="true"> Si
+                  </label>
+                </div>
+               </div>
+              {% endif %}
             </div>
           </div>
           <div class="row margin-top product__btn">

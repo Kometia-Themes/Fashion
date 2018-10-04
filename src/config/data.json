@@ -203,7 +203,29 @@
       "enabled_customer_note_option": true,
       "customer_title_note": "Nota a la compra",
       "customer_btn_note_text": "Agregar nota",
-      "price_text_label": "Precio normal:"
+      "price_text_label": "Precio normal:",
+
+      "personalizable_enable": true,
+      "personalizable_input_1": true,
+      "personalizable_input_1_title": "Title input 1",
+      "personalizable_input_1_type": "text,radio,checkbox,textarea",
+      "personalizable_input_1_optional": false,
+      "personalizable_input_1_values": "text,radio,checkbox,textarea",
+      "personalizable_input_1_default_value": "Mi nombre",
+
+      "personalizable_input_2": false,
+      "personalizable_input_2_title": "Title input 1",
+      "personalizable_input_2_type": "text,radio,checkbox,textarea",
+      "personalizable_input_2_optional": true,
+      "personalizable_input_2_values": "text,radio,checkbox,textarea",
+      "personalizable_input_2_default_value": "Mi nombre",
+
+      "personalizable_input_3": false,
+      "personalizable_input_3_title": "Title input 1",
+      "personalizable_input_3_type": "text,radio,checkbox,textarea",
+      "personalizable_input_3_optional": true,
+      "personalizable_input_3_values": "text,radio,checkbox,textarea",
+      "personalizable_input_3_default_value": "Mi nombre"
     }
   }
 }

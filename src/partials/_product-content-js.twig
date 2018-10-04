@@ -14,6 +14,15 @@
         .zoom();
       }
 
+    {% if settings.personalizable_enable %}
+      $('input[name=inlinePersonalizer]').change(function(){
+        var isPersonalize = $('input[name=inlinePersonalizer]:checked').val();
+        if(isPersonalize === 'true' || isPersonalize === true) {
+          $('#personalizeModal').modal('show')
+        }
+      });
+    {% endif %}
+
     // Update Social Share Links
     var title = '{{ product.name | escape }}';
     var updateShareUrl = function(image_url) {
@@ -108,7 +117,7 @@
           updateShareUrl(image);
           setMainImgContainerHeight();
         {% endif %}
-        
+
         if (!firstLoad) {
           if ({{ settings.enable_product_image_zoom }}) {
             var zoom = $('#zoom');

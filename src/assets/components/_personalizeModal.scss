@@ -1,0 +1,16 @@
+#personalizeModal.modal, #personalizeModal.modal.in {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #personalizeModal.modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+#personalizeModal.modal .modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
