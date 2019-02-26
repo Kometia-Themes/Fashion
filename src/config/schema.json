@@ -3,7 +3,7 @@
     "logo": "screenshot.png",
     "header": "Fashion Theme",
     "content": [
-      "Tema 'Fashion' de Shoperti. Por favor contáctanos por cualquier problema con este tema a [contacto](mailto:themes-support@shoperti.com)."
+      "Tema 'Fashion' de Kometia. Por favor contáctanos por cualquier problema con este tema a [contacto](mailto:themes-support@kometia.com)."
     ]
   },
   "categories": [
@@ -2043,7 +2043,7 @@
             {
               "type": "paragraph",
               "content":
-                "Esta configuración requiere de conocimientos avanzados, cualquier duda contacta al equipo de Shoperti"
+                "Esta configuración requiere de conocimientos avanzados, cualquier duda contacta al equipo de Kometia"
             },
             {
               "type": "text",
@@ -2303,49 +2303,49 @@
               "type": "text",
               "id": "facebook_link",
               "label": "Facebook",
-              "info": "https://www.facebook.com/shoperti"
+              "info": "https://www.facebook.com/kometia"
             },
             {
               "type": "text",
               "id": "twitter_link",
               "label": "Twitter",
-              "info": "https://twitter.com/shoperti"
+              "info": "https://twitter.com/kometia"
             },
             {
               "type": "text",
               "id": "google_link",
               "label": "Google+",
-              "info": "https://plus.google.com/+shoperti"
+              "info": "https://plus.google.com/+kometia"
             },
             {
               "type": "text",
               "id": "pinterest_link",
               "label": "Pinterest",
-              "info": "https://www.pinterest.com/shoperti/"
+              "info": "https://www.pinterest.com/kometia/"
             },
             {
               "type": "text",
               "id": "instagram_link",
               "label": "Instagram",
-              "info": "https://instagram.com/shoperti/"
+              "info": "https://instagram.com/kometia/"
             },
             {
               "type": "text",
               "id": "youtube_link",
               "label": "Youtube",
-              "info": "https://www.youtube.com/user/shoperti"
+              "info": "https://www.youtube.com/user/kometia"
             },
             {
               "type": "text",
               "id": "vimeo_link",
               "label": "Vimeo",
-              "info": "https://vimeo.com/shoperti"
+              "info": "https://vimeo.com/kometia"
             },
             {
               "type": "text",
               "id": "tumblr_link",
               "label": "Tumblr",
-              "info": "http://shoperti.tumblr.com/"
+              "info": "http://kometia.tumblr.com/"
             },
             {
               "type": "text",

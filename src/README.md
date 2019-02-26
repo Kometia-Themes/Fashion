@@ -1,13 +1,13 @@
-# Shoperti Fashion Theme
-> Este es el tema utilizado en [Fashion](https://fashion-theme.shoperti.com/) y puede servirte de inspiración. Puedes usarlo cómo base para crear uno nuevo o realizar ajustes pequeños y modificaciones. Sin duda, puede ser el punto de partida para aprender a construir tus propios temas desde cero.
+# Kometia Fashion Theme
+> Este es el tema utilizado en [Fashion](https://fashion-theme.kometia.com/) y puede servirte de inspiración. Puedes usarlo cómo base para crear uno nuevo o realizar ajustes pequeños y modificaciones. Sin duda, puede ser el punto de partida para aprender a construir tus propios temas desde cero.
 >
-> ** Para más detalles sobre el desarrollo del tema, lee nuestra [Documentación del tema] (https://github.com/Shoperti-Themes/Fashion) **.
+> ** Para más detalles sobre el desarrollo del tema, lee nuestra [Documentación del tema] (https://github.com/Kometia-Themes/Fashion) **.
 
 ## Obteniendo este tema
-1. <a href="https://github.com/Shoperti-Themes/Fashion/archive/master.zip"> Descargar </a> la última versión y rama master.
-2. También puedes clonar el reporte git: <code>git clone git@github.com:Shoperti-Themes/Fashion.git</code>
+1. <a href="https://github.com/Kometia-Themes/Fashion/archive/master.zip"> Descargar </a> la última versión y rama master.
+2. También puedes clonar el reporte git: <code>git clone git@github.com:Kometia-Themes/Fashion.git</code>
 
-![alt text](https://raw.githubusercontent.com/Shoperti-Themes/Fashion/master/screenshot.png "Screeshot")
+![alt text](https://raw.githubusercontent.com/Kometia-Themes/Fashion/master/screenshot.png "Screeshot")
 
 ## Implementación manual
 La opción más sencilla si no deseas realizar cambios en el tema es cargar el archivo [theme.zip](dist/theme.zip) encontrado dentro de la carpeta 'dist' una vez ya descargado el paquete completo.
@@ -22,7 +22,7 @@ Estas tareas toman el código fuente del tema y empaquetan en un zip para ser in
 
 ### Instalando Node
 
-Es indispensable contar con NodeJs instalado. Para saber si cuenta con él, vaya a su terminal y escriba <code>node -v</code> y podrá ver algo así <code>v6.9.1</code> si ya lo tiene instalado. En caso contrario vaya a la página de [Node] (https://nodejs.org/download/) 
+Es indispensable contar con NodeJs instalado. Para saber si cuenta con él, vaya a su terminal y escriba <code>node -v</code> y podrá ver algo así <code>v6.9.1</code> si ya lo tiene instalado. En caso contrario vaya a la página de [Node] (https://nodejs.org/download/)
 
 1. Navegue hasta la raíz de este proyecto de tema descargado
 2. Ejecute `npm install`.
@@ -43,7 +43,7 @@ npm run serve
 
 ```npm run start``` servirá para publicar tus archivos html, estilos y scripts en la carpeta **public** y así construir tu sitio sin funcionalidades de Twig. Incluye un servidor http para ver el sitio usando la ruta http://localhost:9000
 
-```npm run start``` generará una carpeta 'theme' dentro de 'dist' que te servirá para probar tu plantilla en ambiente local, los archivos serán ```.twig``` 
+```npm run start``` generará una carpeta 'theme' dentro de 'dist' que te servirá para probar tu plantilla en ambiente local, los archivos serán ```.twig```
 
 Estas tareas toman el código fuente del tema y empaquetan en un zip para ser instalado.
 
@@ -109,7 +109,7 @@ theme
 │   │   ├── blur-password.jpg
 │   │   ├── favicon.ico
 │   │   └── styles.css.twig
-│   │   
+│   │
 │   ├── config
 │   │   ├── data.json
 │   │   └── schema.json
@@ -175,4 +175,4 @@ Para obtener más información sobre [SemVer] (http://semver.org/lang/es/).
 
 ## Copyright
 
-&copy; Copyright Shoperti 2017 - Ver [TÉRMINOS Y CONDICIONES](https://www.shoperti.com/terminos-y-condiciones) para más detalles.
+&copy; Copyright Kometia 2019 - Ver [TÉRMINOS Y CONDICIONES](https://www.kometia.com/terminos-y-condiciones) para más detalles.
