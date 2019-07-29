@@ -1,6 +1,6 @@
-{% if settings.slide_1 or settings.slide_2 or settings.slide_3 %}
+{% if settings.slide_1 or settings.slide_2 or settings.slide_3 or settings.slide_4 %}
 <div class="slider-home slider">
-  {% for i in 1..3 %}
+  {% for i in 1..4 %}
     {% set slideType = '' %}
     {% set slide = 'slide_'~i %}
     {% if settings.slide_bg_cover_type %}
