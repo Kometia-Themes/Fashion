@@ -24,7 +24,8 @@
 
 .slide_1,
 .slide_2,
-.slide_3 {
+.slide_3,
+.slide_4 {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
@@ -32,7 +33,8 @@
 
 .slide_1.cover-slider,
 .slide_2.cover-slider,
-.slide_3.cover-slider {
+.slide_3.cover-slider,
+.slide_4.cover-slider {
   background-position: top center;
   background-size: cover !important;
 }
@@ -47,6 +49,10 @@
 
 .slide_3 {
   background-color: $slide_3_bg_color;
+}
+
+.slide_4 {
+  background-color: $slide_4_bg_color;
 }
 
 .slide_1 .btn__slide {
@@ -250,6 +256,22 @@
 
 .slide3 a.btn__slide {
   color: $slide_3_btn_color;
+}
+
+.slide4 h1.title__big {
+  color: $slide_4_title_color;
+}
+
+.slide4 h2.title__medium {
+  color: $slide_4_description_color;
+}
+
+.slide4 h2.title__medium em {
+  color: $slide_4_description_color;
+}
+
+.slide4 a.btn__slide {
+  color: $slide_4_btn_color;
 }
 
 .slick-prev,

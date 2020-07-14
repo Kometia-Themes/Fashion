@@ -1873,8 +1873,7 @@
             {
               "type": "color",
               "id": "slider_arrow_color",
-              "label": "Color de las flechas",
-              "default": "rgba(255,255,255,.45);"
+              "label": "Color de las flechas"
             },
             {
               "type": "checkbox",
@@ -1933,12 +1932,6 @@
         {
           "header": "Productos Destacados",
           "settings": [
-            {
-              "type": "checkbox",
-              "id": "enable_share_products",
-              "label": "Compartir en redes sociales",
-              "default": true
-            },
             {
               "type": "text",
               "id": "featured_products_title",

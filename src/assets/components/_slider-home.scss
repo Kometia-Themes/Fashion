@@ -20,7 +20,8 @@
   }
   .slide1,
   .slide2,
-  .slide3 {
+  .slide3,
+  .slide4 {
     height: 100%;
     width: 100%;
     position: relative;
@@ -33,5 +34,8 @@
   }
   .slide_3 {
     background-color: $slide_3_bg_color;
+  }
+  .slide_4 {
+    background-color: $slide_4_bg_color;
   }
 }
