@@ -63,11 +63,10 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: './src/images/', to: 'images' },
-      { from: './src/assets/*.css', to: 'assets' },
-      { from: './src/assets/settings.css.twig', to: 'assets' }
+      { from: './src/assets/*.css', to: 'assets' }
     ], {
       ignore: [
-        // Doesn't copy any files with a extension    
+        // Doesn't copy any files with a extension
         '*.less',
         './src/assets/*.less',
         '.DS_Store',

@@ -2,6 +2,28 @@
   "current": "Base",
   "presets": {
     "Base": {
+      "__checkout_use_header_background_image": false,
+      "__checkout_header_background_image": "",
+      "__checkout_logo": "text",
+      "__checkout_header_logo_image": "",
+      "__checkout_logo_image_size": "medium",
+      "__checkout_header_logo_image_position": "left",
+      "__checkout_use_body_background_image": false,
+      "__checkout_body_background_image": "",
+      "__checkout_body_background_color": "#f7f8fa",
+      "__checkout_box_use_shadow": true,
+      "__checkout_use_box_background_image": false,
+      "__checkout_box_background_image": "",
+      "__checkout_box_background_color": "#FFFFFF",
+      "__checkout_box_border_width": "0px",
+      "__checkout_box_border_color": "#d9d9d9",
+      "__checkout_separator_width": "1px",
+      "__checkout_separator_color": "#eeeeee",
+      "__checkout_body_font": "",
+      "__checkout_heading_font": "",
+      "__checkout_color_accents": "#2196f3",
+      "__checkout_buttons_color": "#1d86d9",
+      "__checkout_errors_color": "#d95a5a",
       "brand_main_color": "#01A9DB",
       "body_background_color": "#ffffff",
       "main_menu_background_color": "#222222",
@@ -203,7 +225,13 @@
       "enabled_customer_note_option": true,
       "customer_title_note": "Nota a la compra",
       "customer_btn_note_text": "Agregar nota",
-      "price_text_label": "Precio normal:"
+      "price_text_label": "Precio normal:",
+      "slide_btn_color": "#FFFFFF",
+      "slide_1_bg_color": "#FFFFFF",
+      "slide_2_bg_color": "#FFFFFF",
+      "slide_3_bg_color": "#FFFFFF",
+      "slide_4_bg_color": "#FFFFFF",
+      "main_banner_btn_url": ""
     }
   }
 }
