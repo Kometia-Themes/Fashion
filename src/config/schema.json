@@ -17,14 +17,12 @@
             {
               "type": "color",
               "id": "brand_main_color",
-              "label": "Color destacado",
-              "default": "#01A9DB"
+              "label": "Color destacado"
             },
             {
               "type": "color",
               "id": "body_background_color",
-              "label": "Fondo",
-              "default": "#ffffff"
+              "label": "Fondo"
             }
           ]
         },
@@ -34,44 +32,37 @@
             {
               "type": "color",
               "id": "main_menu_background_color",
-              "label": "Fondo",
-              "default": "#222222"
+              "label": "Fondo"
             },
             {
               "type": "color",
               "id": "main_menu_links_color",
-              "label": "Vínculos y Textos",
-              "default": "#777"
+              "label": "Vínculos y Textos"
             },
             {
               "type": "color",
               "id": "main_menu_links_color_hover",
-              "label": "Sobre vínculos",
-              "default": "#01A9DB"
+              "label": "Sobre vínculos"
             },
             {
               "type": "color",
               "id": "main_menu_dropdown_links",
-              "label": "Vínculos en menú desplegable",
-              "default": "#666666"
+              "label": "Vínculos en menú desplegable"
             },
             {
               "type": "color",
               "id": "main_menu_dropdown_links_hover",
-              "label": "Sobre vínculos en menú desplegable",
-              "default": "#ffffff"
+              "label": "Sobre vínculos en menú desplegable"
             },
             {
               "type": "color",
               "id": "main_menu_dropdown_bg",
-              "label": "Fondo de vínculos en menú desplegable",
-              "default": "#eeeeee"
+              "label": "Fondo de vínculos en menú desplegable"
             },
             {
               "type": "color",
               "id": "main_menu_dropdown_bg_hover",
-              "label": "Fondo de sobre vínculos en menú desplegable",
-              "default": "#01A9DB"
+              "label": "Fondo de sobre vínculos en menú desplegable"
             }
           ]
         },
@@ -81,20 +72,17 @@
             {
               "type": "color",
               "id": "second_menu_background_color",
-              "label": "Fondo",
-              "default": "#f8f8f8"
+              "label": "Fondo"
             },
             {
               "type": "color",
               "id": "second_menu_links_color",
-              "label": "Vínculos y Textos",
-              "default": "#777"
+              "label": "Vínculos y Textos"
             },
             {
               "type": "color",
               "id": "second_menu_links_color_hover",
-              "label": "Sobre vínculos",
-              "default": "#01A9DB"
+              "label": "Sobre vínculos"
             }
           ]
         },
@@ -104,20 +92,17 @@
             {
               "type": "color",
               "id": "breadcrumb_background_color",
-              "label": "Fondo",
-              "default": "#FAFAFA"
+              "label": "Fondo"
             },
             {
               "type": "color",
               "id": "breadcrumb_inactive_links_color",
-              "label": "Textos inactivos",
-              "default": "#777"
+              "label": "Textos inactivos"
             },
             {
               "type": "color",
               "id": "breadcrumb_active_links_color",
-              "label": "Vínculo activo",
-              "default": "#01A9DB"
+              "label": "Vínculo activo"
             }
           ]
         },
@@ -127,56 +112,47 @@
             {
               "type": "color",
               "id": "footer_title_color",
-              "label": "Títulos",
-              "default": "#FFF"
+              "label": "Títulos"
             },
             {
               "type": "color",
               "id": "footer_background_color",
-              "label": "Fondo Principal",
-              "default": "#222222"
+              "label": "Fondo Principal"
             },
             {
               "type": "color",
               "id": "footer_body_text_color",
-              "label": "Textos principales",
-              "default": "#717171"
+              "label": "Textos principales"
             },
             {
               "type": "color",
               "id": "footer_links_color",
-              "label": "Vínculos principales",
-              "default": "#717171"
+              "label": "Vínculos principales"
             },
             {
               "type": "color",
               "id": "footer_links_color_hover",
-              "label": "Sobre vínculos principales",
-              "default": "#01A9DB"
+              "label": "Sobre vínculos principales"
             },
             {
               "type": "color",
               "id": "footer_second_menu_text_color",
-              "label": "Textos menú secundario",
-              "default": "#717171"
+              "label": "Textos menú secundario"
             },
             {
               "type": "color",
               "id": "footer_second_menu_links_color",
-              "label": "Vínculos menú secundario",
-              "default": "#717171"
+              "label": "Vínculos menú secundario"
             },
             {
               "type": "color",
               "id": "footer_second_menu_links_color_hover",
-              "label": "Sobre vínculos menú secundario",
-              "default": "#01A9DB"
+              "label": "Sobre vínculos menú secundario"
             },
             {
               "type": "color",
               "id": "footer_second_menu_background_color",
-              "label": "Fondo menú secundario",
-              "default": "#000000"
+              "label": "Fondo menú secundario"
             }
           ]
         },
@@ -186,26 +162,22 @@
             {
               "type": "color",
               "id": "headings_color",
-              "label": "Títulos",
-              "default": "#161616"
+              "label": "Títulos"
             },
             {
               "type": "color",
               "id": "body_font_color",
-              "label": "Contenidos",
-              "default": "#161616"
+              "label": "Contenidos"
             },
             {
               "type": "color",
               "id": "main_link_color",
-              "label": "Vínculos",
-              "default": "#01A9DB"
+              "label": "Vínculos"
             },
             {
               "type": "color",
               "id": "main_link_color_hover",
-              "label": "Sobre vínculos",
-              "default": "#0291BD"
+              "label": "Sobre vínculos"
             }
           ]
         },
@@ -215,14 +187,12 @@
             {
               "type": "color",
               "id": "btn_color",
-              "label": "Texto",
-              "default": "#222222"
+              "label": "Texto"
             },
             {
               "type": "color",
               "id": "btn_color_hover",
-              "label": "Color con mouse encima",
-              "default": "#fff"
+              "label": "Color con mouse encima"
             }
           ]
         },
@@ -232,20 +202,17 @@
             {
               "type": "color",
               "id": "slide_title_color",
-              "label": "Títulos",
-              "default": "#FFFFFF"
+              "label": "Títulos"
             },
             {
               "type": "color",
               "id": "slide_description_color",
-              "label": "Descripción",
-              "default": "#FFFFFF"
+              "label": "Descripción"
             },
             {
               "type": "color",
               "id": "slide_btn_color",
-              "label": "Botón",
-              "default": "#FFFFFF"
+              "label": "Botón"
             }
           ]
         },
@@ -255,20 +222,17 @@
             {
               "type": "color",
               "id": "placeholder_background_color",
-              "label": "Fondo colecciones",
-              "default": "#ECECEC"
+              "label": "Fondo colecciones"
             },
             {
               "type": "color",
               "id": "product_card_background_color",
-              "label": "Fondo de producto",
-              "default": "#FFFFFF"
+              "label": "Fondo de producto"
             },
             {
               "type": "color",
               "id": "product_compared_price_color",
-              "label": "Color precio comparativo",
-              "default": "#D61200"
+              "label": "Color precio comparativo"
             }
           ]
         }
@@ -1122,9 +1086,7 @@
             {
               "type": "text",
               "id": "footer_contact_data",
-              "label": "Contacto y/o ubicación",
-              "default":
-                "CALLE 000, COLONIA, DELEGACION/MUNICIPIO, MÉXICO, ESTADO, C.P. 00000 TELÉFONO (+52) 000 000000 - (+52) 000 000000 INFO@MIEMPRESA.COM"
+              "label": "Contacto y/o ubicación"
             },
             {
               "type": "checkbox",
@@ -1134,27 +1096,22 @@
             {
               "type": "text",
               "id": "footer_mailing_list_title",
-              "label": "Título newsletter",
-              "default": "¡Entérate de nuestras ofertas!"
+              "label": "Título newsletter"
             },
             {
               "type": "text",
               "id": "footer_mailing_list_text",
-              "label": "Texto newsletter",
-              "default":
-                "Entérate antes que nadie de las mejores promociones, nuevos estilos, tendencias del momento y mucho más…"
+              "label": "Texto newsletter"
             },
             {
               "type": "checkbox",
               "id": "footer_display_social",
-              "label": "Mostrar redes sociales",
-              "default": true
+              "label": "Mostrar redes sociales"
             },
             {
               "type": "checkbox",
               "id": "footer_display_payment_methods",
-              "label": "Mostrar métodos de pago",
-              "default": true
+              "label": "Mostrar métodos de pago"
             }
           ]
         },
@@ -1174,20 +1131,17 @@
             {
               "type": "checkbox",
               "id": "footer_first_display_menu",
-              "label": "Mostrar menú",
-              "default": true
+              "label": "Mostrar menú"
             },
             {
               "type": "text",
               "id": "footer_first_title_menu",
-              "label": "Título",
-              "default": "Navegación"
+              "label": "Título"
             },
             {
               "type": "text",
               "id": "footer_first_menu",
-              "label": "Identificador",
-              "default": "footer"
+              "label": "Identificador"
             }
           ]
         },
@@ -1334,10 +1288,6 @@
                 {
                   "value": "featured-blog",
                   "label": "Blog"
-                },
-                {
-                  "value": "featured-instagram",
-                  "label": "Galería Instagram"
                 }
               ]
             },
@@ -1370,10 +1320,6 @@
                 {
                   "value": "featured-blog",
                   "label": "Blog"
-                },
-                {
-                  "value": "featured-instagram",
-                  "label": "Galería Instagram"
                 }
               ]
             },
@@ -1406,10 +1352,6 @@
                 {
                   "value": "featured-blog",
                   "label": "Blog"
-                },
-                {
-                  "value": "featured-instagram",
-                  "label": "Galería Instagram"
                 }
               ]
             },
@@ -1442,10 +1384,6 @@
                 {
                   "value": "featured-blog",
                   "label": "Blog"
-                },
-                {
-                  "value": "featured-instagram",
-                  "label": "Galería Instagram"
                 }
               ]
             },
@@ -1478,46 +1416,6 @@
                 {
                   "value": "featured-blog",
                   "label": "Blog"
-                },
-                {
-                  "value": "featured-instagram",
-                  "label": "Galería Instagram"
-                }
-              ]
-            },
-            {
-              "type": "select",
-              "id": "frontpage_section_6",
-              "label": "Sección 6",
-              "default": "featured-instagram",
-              "options": [
-                {
-                  "value": "none",
-                  "label": "Ningúno"
-                },
-                {
-                  "value": "featured-slider",
-                  "label": "Slider"
-                },
-                {
-                  "value": "featured-collections",
-                  "label": "Colecciones destacadas"
-                },
-                {
-                  "value": "featured-products",
-                  "label": "Productos destacados"
-                },
-                {
-                  "value": "featured-banner",
-                  "label": "Banner"
-                },
-                {
-                  "value": "featured-blog",
-                  "label": "Blog"
-                },
-                {
-                  "value": "featured-instagram",
-                  "label": "Galería Instagram"
                 }
               ]
             }
@@ -1556,8 +1454,7 @@
             {
               "type": "color",
               "id": "slide_1_bg_color",
-              "label": "Color de fonto",
-              "default": "#FFFFFF"
+              "label": "Color de fondo"
             },
             {
               "type": "text",
@@ -1567,8 +1464,7 @@
             {
               "type": "color",
               "id": "slide_1_title_color",
-              "label": "Color del título",
-              "default": "#FFFFFF"
+              "label": "Color del título"
             },
             {
               "type": "text",
@@ -1578,8 +1474,7 @@
             {
               "type": "color",
               "id": "slide_1_description_color",
-              "label": "Color de la descripción",
-              "default": "#FFFFFF"
+              "label": "Color de la descripción"
             },
             {
               "type": "checkbox",
@@ -1599,14 +1494,12 @@
             {
               "type": "color",
               "id": "slide_1_btn_color",
-              "label": "Color del botón",
-              "default": "#FFFFFF"
+              "label": "Color del botón"
             },
             {
               "type": "color",
               "id": "slide_1_btn_bg_color",
-              "label": "Color del botón",
-              "default": "#01A9DB"
+              "label": "Color del botón"
             }
           ]
         },
@@ -1637,8 +1530,7 @@
             {
               "type": "color",
               "id": "slide_2_bg_color",
-              "label": "Color de fonto",
-              "default": "#FFFFFF"
+              "label": "Color de fondo"
             },
             {
               "type": "text",
@@ -1648,8 +1540,7 @@
             {
               "type": "color",
               "id": "slide_2_title_color",
-              "label": "Color del título",
-              "default": "#FFFFFF"
+              "label": "Color del título"
             },
             {
               "type": "text",
@@ -1659,8 +1550,7 @@
             {
               "type": "color",
               "id": "slide_2_description_color",
-              "label": "Color de la descripción",
-              "default": "#FFFFFF"
+              "label": "Color de la descripción"
             },
             {
               "type": "checkbox",
@@ -1680,14 +1570,12 @@
             {
               "type": "color",
               "id": "slide_2_btn_color",
-              "label": "Color del botón",
-              "default": "#FFFFFF"
+              "label": "Color del botón"
             },
             {
               "type": "color",
               "id": "slide_2_btn_bg_color",
-              "label": "Color de fondo del botón",
-              "default": "#01A9DB"
+              "label": "Color de fondo del botón"
             }
           ]
         },
@@ -1718,8 +1606,7 @@
             {
               "type": "color",
               "id": "slide_3_bg_color",
-              "label": "Color de fonto",
-              "default": "#FFFFFF"
+              "label": "Color de fondo"
             },
             {
               "type": "text",
@@ -1729,8 +1616,7 @@
             {
               "type": "color",
               "id": "slide_3_title_color",
-              "label": "Color del título",
-              "default": "#FFFFFF"
+              "label": "Color del título"
             },
             {
               "type": "text",
@@ -1740,8 +1626,7 @@
             {
               "type": "color",
               "id": "slide_3_description_color",
-              "label": "Color de la descripción",
-              "default": "#FFFFFF"
+              "label": "Color de la descripción"
             },
             {
               "type": "checkbox",
@@ -1761,14 +1646,12 @@
             {
               "type": "color",
               "id": "slide_3_btn_color",
-              "label": "Color del botón",
-              "default": "#FFFFFF"
+              "label": "Color del botón"
             },
             {
               "type": "color",
               "id": "slide_3_btn_bg_color",
-              "label": "Color de fondo del botón",
-              "default": "#01A9DB"
+              "label": "Color de fondo del botón"
             }
           ]
         },
@@ -1798,8 +1681,7 @@
             {
               "type": "color",
               "id": "slide_4_bg_color",
-              "label": "Color de fonto",
-              "default": "#FFFFFF"
+              "label": "Color de fondo"
             },
             {
               "type": "text",
@@ -1809,8 +1691,7 @@
             {
               "type": "color",
               "id": "slide_4_title_color",
-              "label": "Color del título",
-              "default": "#FFFFFF"
+              "label": "Color del título"
             },
             {
               "type": "text",
@@ -1820,8 +1701,7 @@
             {
               "type": "color",
               "id": "slide_4_description_color",
-              "label": "Color de la descripción",
-              "default": "#FFFFFF"
+              "label": "Color de la descripción"
             },
             {
               "type": "checkbox",
@@ -1847,8 +1727,7 @@
             {
               "type": "color",
               "id": "slide_4_btn_bg_color",
-              "label": "Color de fondo del botón",
-              "default": "#01A9DB"
+              "label": "Color de fondo del botón"
             }
           ]
         },
@@ -1935,14 +1814,12 @@
             {
               "type": "text",
               "id": "featured_products_title",
-              "label": "Título de Productos Destacados",
-              "default": "También te puede gustar"
+              "label": "Título de Productos Destacados"
             },
             {
               "type": "collection",
               "id": "featured_products_collection",
-              "label": "Productos destacados",
-              "default": "inicio"
+              "label": "Productos destacados"
             },
             {
               "type": "text",
@@ -1965,20 +1842,17 @@
             {
               "type": "image",
               "id": "main_banner_image",
-              "label": "Imagen de fondo",
-              "default": ""
+              "label": "Imagen de fondo"
             },
             {
               "type": "checkbox",
               "id": "enable_banner_image",
-              "label": "Mostrar imagen de fondo",
-              "default": true
+              "label": "Mostrar imagen de fondo"
             },
             {
               "type": "color",
               "id": "main_banner_background_color",
-              "label": "Color de fondo",
-              "default": "#ffffff"
+              "label": "Color de fondo"
             },
             {
               "type": "checkbox",
@@ -2014,7 +1888,6 @@
               "type": "checkbox",
               "id": "featured_blog_home_thumbnails_enabled",
               "label": "Mostrar la imagen destacada",
-              "default": true,
               "info": "Si no existe se mostrará una imagen genérica"
             },
             {
@@ -2022,36 +1895,6 @@
               "id": "featured_blog_limit",
               "label": "Cantidad de posts a mostrar",
               "default": "3"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Página de Inicio - Instagram",
-      "icon": "home-page",
-      "sections": [
-        {
-          "settings": [
-            {
-              "type": "paragraph",
-              "content":
-                "Esta configuración requiere de conocimientos avanzados, cualquier duda contacta al equipo de Kometia"
-            },
-            {
-              "type": "text",
-              "id": "instagram_title",
-              "label": "Título de sección"
-            },
-            {
-              "type": "text",
-              "id": "instagram_id",
-              "label": "Id de usuario"
-            },
-            {
-              "type": "text",
-              "id": "instagram_token",
-              "label": "Token de sesión"
             }
           ]
         }
@@ -2066,8 +1909,7 @@
             {
               "type": "checkbox",
               "id": "featured_blog_thumbnails_enabled",
-              "label": "Mostrar la imagen destacada",
-              "default": true
+              "label": "Mostrar la imagen destacada"
             }
           ]
         }
@@ -2082,8 +1924,7 @@
             {
               "type": "checkbox",
               "id": "show_collections_sidebar",
-              "label": "Mostrar las barra de colecciones",
-              "default": true
+              "label": "Mostrar las barra de colecciones"
             }
           ]
         }
@@ -2110,14 +1951,12 @@
             {
               "type": "checkbox",
               "id": "enable_product_image_zoom",
-              "label": "Habilitar zoom en imagen principal",
-              "default": true
+              "label": "Habilitar zoom en imagen principal"
             },
             {
               "type": "checkbox",
               "id": "show_vendor_name",
-              "label": "Mostrar marca del producto",
-              "default": true
+              "label": "Mostrar marca del producto"
             }
           ]
         },
@@ -2152,8 +1991,7 @@
             {
               "type": "checkbox",
               "id": "orderby_name",
-              "label": "Habilitar ordenar por nombre",
-              "default": true
+              "label": "Habilitar ordenar por nombre"
             },
             {
               "type": "text",
@@ -2170,8 +2008,7 @@
             {
               "type": "checkbox",
               "id": "orderby_created",
-              "label": "Habilitar ordenar por fecha de creación",
-              "default": true
+              "label": "Habilitar ordenar por fecha de creación"
             },
             {
               "type": "text",
@@ -2188,8 +2025,7 @@
             {
               "type": "checkbox",
               "id": "orderby_price",
-              "label": "Habilitar ordenar por precio",
-              "default": true
+              "label": "Habilitar ordenar por precio"
             },
             {
               "type": "text",
@@ -2226,14 +2062,12 @@
             {
               "type": "text",
               "id": "cart_btn_buy_text",
-              "label": "Texto de boton comprar",
-              "default": "Prodecer a comprar"
+              "label": "Texto de boton comprar"
             },
             {
               "type": "text",
               "id": "cart_btn_more_text",
-              "label": "Texto de boton comprar más",
-              "default": "Comprar más"
+              "label": "Texto de boton comprar más"
             }
           ]
         },
@@ -2243,20 +2077,17 @@
             {
               "type": "checkbox",
               "id": "enabled_gift_option",
-              "label": "Mostrar opciones para regalo.",
-              "default": false
+              "label": "Mostrar opciones para regalo."
             },
             {
               "type": "text",
               "id": "gift_title_message",
-              "label": "Título",
-              "default": "Esto es un regalo. Incluir el siguiente mensaje (150 caracteres máximo)."
+              "label": "Título"
             },
             {
               "type": "text",
               "id": "gift_btn_message",
-              "label": "Texto del botón",
-              "default": "Agregar mensaje"
+              "label": "Texto del botón"
             }
           ]
         },
@@ -2266,20 +2097,17 @@
             {
               "type": "checkbox",
               "id": "enabled_customer_note_option",
-              "label": "Mostrar campo nota del cliente.",
-              "default": true
+              "label": "Mostrar campo nota del cliente."
             },
             {
               "type": "text",
               "id": "customer_title_note",
-              "label": "Título",
-              "default": "Agrega alguna nota o comentario al vendedor:"
+              "label": "Título"
             },
             {
               "type": "text",
               "id": "customer_btn_note_text",
-              "label": "Texto del botón",
-              "default": "Agregar nota"
+              "label": "Texto del botón"
             }
           ]
         }
